@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<app name="SSNIT" ver="2" modder="administrator.WIN-F3GNCPC19F5.SUMERGE1" dt="11/20/13 01:52:37.250 ">
+		<k name="tmservers">
+			<k name="tms" ip="127.0.0.1" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="PROVIDER=MSACCESS;DSN=[path/]AppWizardEng.mdb;CATALOG=;DBNTA=;"/>
+		<k name="tmadmin" cs="PROVIDER=MSACCESS;DSN=[path/]AppWizardAdm.mdb;CATALOG=;DBNTA=;"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="AppWizard.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\AppWizard\AppWizardFingerprint.mdb;"/>
+			<k name="lookupdb" cs="provider=microsoft.jet.oledb.4.0;data source=c:\datacap\AppWizard\AppWizardLook.mdb;persist security info=false;"/>
+			<k name="vscanimagedir" v="c:\datacap\AppWizard\images"/>
+			<k name="exportdb" cs=""/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="3" modder="administrator.WIN-F3GNCPC19F5.SUMERGE1" dt="11/25/13 17:36:35.724 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="127.0.0.1" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="PROVIDER=MSACCESS;DSN=[path/]SSNITEng.mdb;CATALOG=;DBNTA=;"/>
+		<k name="tmadmin" cs="PROVIDER=MSACCESS;DSN=[path/]SSNITAdm.mdb;CATALOG=;DBNTA=;"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\SSNIT\SSNITFingerprint.mdb;"/>
+			<k name="lookupdb" cs="provider=microsoft.jet.oledb.4.0;data source=C:\Datacap\SSNIT\SSNITLook.mdb;persist security info=false;"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs=""/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="4" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 14:37:40.528 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="127.0.0.1" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="PROVIDER=MSACCESS;DSN=[path/]SSNITEng.mdb;CATALOG=;DBNTA=;"/>
+		<k name="tmadmin" cs="PROVIDER=MSACCESS;DSN=[path/]SSNITAdm.mdb;CATALOG=;DBNTA=;"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\SSNIT\SSNITFingerprint.mdb;"/>
+			<k name="lookupdb" cs="provider=microsoft.jet.oledb.4.0;data source=C:\Datacap\SSNIT\SSNITLook.mdb;persist security info=false;"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs=""/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="5" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/23/14 14:42:38.342 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01b72eabd594b9ce8dd2b6a8d79918322ad3f6a71496449a1274a83b554b711265d70b20dad9f15053b4b942029636e56a476bd962789c3e85f7912cef964b8efc2a147fc33b40585fac43429fade9b5ce45ef7fe75a087730bf94107a1b958b510fb93313b89c4797f69c117464c49583a756099e25875d263d539214d0da4ca671c87c4f4267a66c22d82ddb29dc3cc018e14aaaca3ef71d1a1e3eb3734d5be7[/secured]"/>
+		<k name="tmadmin" cs="[secured]013672a2a74b254e58d9cf161e4db506c4d4dba5fbb737e395c09f0c301645fac7283229fcba314d5b2c049d352963045f2f0de4eacd8a5fc94bb19a33bc35a28241cb3b010ab34b9c0083710b57f39f8b187c28660aa8d9b5fa81fc3426b52ceb865418c94f0dccbd1ec8d05e716ef2fddc6f7b11767b2d05cf280c9ec7ce04efff8eefec1091ff814f60fabef721dbd66b2a8ffee71357c109ef178f43354851[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01774e938c9fb38a47076241d35ba58927d3e7bd49235a5f1557418c78eaaceb81b6ddae58f5226dcf2fa899a0f5abad4d65f028547d7f96851ef96244f218fdf60e7de8905d29f5a83867b17bcbb9c8ad0ce5a15837204175ba976a18e6e58a4b4ba4289a587faffefa559424e7f33e030a2934e68f9a769f83955c92b8e8a0410ef1b205cec6531513edb4bb302ac7cd546b039c12b85e68b95f869ae80b3925cdb0b7b7498ac198c3b5df822b6a264f6f50f88f0164ad1de5a7d30dc56b0d6f[/secured]"/>
+			<k name="lookupdb" cs="[secured]01b0c5b18e06ee4b984060b3a1c4a4498c90bf90808199b970c974be48ba2880efe0cffcca3600413df1a1d07c8c1194c05708d8fec9a4b4e81034a86df7ab7079b136fc6f866cfeacb2ebe1ee25efd6bba879c265c25255334057f60c611355059f3a11e5e08404446cfae0aada7b8c3af3f11cbc9d0a168182be1e3e6230ae6357298d992148d1108db9c91c2842a32cfaf23ed993cc51a9d87a40ce4b29fb0352a0c71d3396b2ca2709e822b683263e2c9d3e6090c9342b3f3c09a1a111d761e51993ceb8e29130b8e27d0974ff79c787b4bb3c1fb600af280dfd8fc8f01aec9141fb1a5b0d584dfab6951b062ed7aa[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01a8104a1e7d05eabd1313547b45e2c9f0e74c9d554d0361736faa131c8368660eac17f4bd16845f7860822d325c3cabe0879a739f7834cdc5296dce7960d5b1af[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="6" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/23/14 14:43:58.410 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01e38f81d4ac46bbb2ebfae7502d6de134f8f336c98809010e3d16d4735c9fcc6efd9e9fe47d87f039c0b1828f986bc6577dfbcc93a814b2b5a867d1dfe1f12dd12673c17e3f09f8ba9fb40a755470334cae72896f8f7ec0d0c95e0e5a17258e0315f43935e1de56fcd7a3a49da7b492b76ff97b9aceed6266ee41128468c6505d186922821b100a9a248fc079080fe2e7021c08ee68236be156a210e973999a3c[/secured]"/>
+		<k name="tmadmin" cs="[secured]011697f79f3fa28aa2acb5c5308f2407d3955e30188070a7a12c4b8a20b17e9710300209537f6b3e51af43fe4ce258adc0cdb49fc02a1e9e5da683e6b8f09a9c5741f6606a08cfae8375710b901466c58ce73d32871ff619481f628162111ccf6e075a3ac4262183a214dbb0010eca835dd01b4ab6d14b1cdd7fc27d0eb6500fb4c82595cc559898a9d5d0d1f715136f7f84a978f3c6a203e791842b6f56d80837[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]0175d3ac5dc25b331edaf3d5e83adf996e7220e09b6f4d6e151eea6e2deb44bbd9019f62437d0f6eeeca5791e6c85187b1fed49913ceea81637c441bda21f346ee073aed66f27c40cc61634d26757f58909994253e8c24f544666a665afef4e47e780af6e8db81efbd3d15f3d1bc746121d087ae4340c68ef3b8e8ffa3c625c40f8f67989477c2554bda898ec7ca011b9fcbe41d8fd4e7e5cfcb7a21ce9beb4e0ea846bebf7bcae8a94473832c03b8e6257800e279cb2c33525016dfb9900349f5[/secured]"/>
+			<k name="lookupdb" cs="[secured]0156113c233834b91a6eda1703aed2a3de66c1304349fdf0b0cab6e4fd8e355e6b5e2da32716b2151d84211d88f008c4596e6e1dc5ffade441a65c42cbb06fe1c6f3d1f235171b0153fda3b2bfceae880664e74911dccc6dc41dddcd08742a30d2be5e8a0792d8177108680fe36cafa488a8f22aeb30a40dc5f647fd837928bd617596cb60326b91293ee11d1f905991beb319a0b5185ab038e58eea1e54fcc4dbe704c9f3dfca954c6d912ccb808d3c478ea2f1a567f035bfba38bc7c86f255bec1f9d8e8c369361ad9db6aa6fc7a1a319ed1cba7e61a8ba5050e1e0c639383a94644f184e76d65c6cd648201e207a997[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01ceca53f67fecdc41fd23c131bde2f0524e81ba279c83cb3b7a3b18e8fa0469303610ecc6fe2ea82a15848489de394841c15302ab5c31c34dedebc4b3bba0bc48[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="7" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 14:44:36.874 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01e38f81d4ac46bbb2ebfae7502d6de134f8f336c98809010e3d16d4735c9fcc6efd9e9fe47d87f039c0b1828f986bc6577dfbcc93a814b2b5a867d1dfe1f12dd12673c17e3f09f8ba9fb40a755470334cae72896f8f7ec0d0c95e0e5a17258e0315f43935e1de56fcd7a3a49da7b492b76ff97b9aceed6266ee41128468c6505d186922821b100a9a248fc079080fe2e7021c08ee68236be156a210e973999a3c[/secured]"/>
+		<k name="tmadmin" cs="[secured]011697f79f3fa28aa2acb5c5308f2407d3955e30188070a7a12c4b8a20b17e9710300209537f6b3e51af43fe4ce258adc0cdb49fc02a1e9e5da683e6b8f09a9c5741f6606a08cfae8375710b901466c58ce73d32871ff619481f628162111ccf6e075a3ac4262183a214dbb0010eca835dd01b4ab6d14b1cdd7fc27d0eb6500fb4c82595cc559898a9d5d0d1f715136f7f84a978f3c6a203e791842b6f56d80837[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]0175d3ac5dc25b331edaf3d5e83adf996e7220e09b6f4d6e151eea6e2deb44bbd9019f62437d0f6eeeca5791e6c85187b1fed49913ceea81637c441bda21f346ee073aed66f27c40cc61634d26757f58909994253e8c24f544666a665afef4e47e780af6e8db81efbd3d15f3d1bc746121d087ae4340c68ef3b8e8ffa3c625c40f8f67989477c2554bda898ec7ca011b9fcbe41d8fd4e7e5cfcb7a21ce9beb4e0ea846bebf7bcae8a94473832c03b8e6257800e279cb2c33525016dfb9900349f5[/secured]"/>
+			<k name="lookupdb" cs="[secured]0156113c233834b91a6eda1703aed2a3de66c1304349fdf0b0cab6e4fd8e355e6b5e2da32716b2151d84211d88f008c4596e6e1dc5ffade441a65c42cbb06fe1c6f3d1f235171b0153fda3b2bfceae880664e74911dccc6dc41dddcd08742a30d2be5e8a0792d8177108680fe36cafa488a8f22aeb30a40dc5f647fd837928bd617596cb60326b91293ee11d1f905991beb319a0b5185ab038e58eea1e54fcc4dbe704c9f3dfca954c6d912ccb808d3c478ea2f1a567f035bfba38bc7c86f255bec1f9d8e8c369361ad9db6aa6fc7a1a319ed1cba7e61a8ba5050e1e0c639383a94644f184e76d65c6cd648201e207a997[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01ceca53f67fecdc41fd23c131bde2f0524e81ba279c83cb3b7a3b18e8fa0469303610ecc6fe2ea82a15848489de394841c15302ab5c31c34dedebc4b3bba0bc48[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="8" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 14:45:07.451 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01e38f81d4ac46bbb2ebfae7502d6de134f8f336c98809010e3d16d4735c9fcc6efd9e9fe47d87f039c0b1828f986bc6577dfbcc93a814b2b5a867d1dfe1f12dd12673c17e3f09f8ba9fb40a755470334cae72896f8f7ec0d0c95e0e5a17258e0315f43935e1de56fcd7a3a49da7b492b76ff97b9aceed6266ee41128468c6505d186922821b100a9a248fc079080fe2e7021c08ee68236be156a210e973999a3c[/secured]"/>
+		<k name="tmadmin" cs="[secured]011697f79f3fa28aa2acb5c5308f2407d3955e30188070a7a12c4b8a20b17e9710300209537f6b3e51af43fe4ce258adc0cdb49fc02a1e9e5da683e6b8f09a9c5741f6606a08cfae8375710b901466c58ce73d32871ff619481f628162111ccf6e075a3ac4262183a214dbb0010eca835dd01b4ab6d14b1cdd7fc27d0eb6500fb4c82595cc559898a9d5d0d1f715136f7f84a978f3c6a203e791842b6f56d80837[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]0175d3ac5dc25b331edaf3d5e83adf996e7220e09b6f4d6e151eea6e2deb44bbd9019f62437d0f6eeeca5791e6c85187b1fed49913ceea81637c441bda21f346ee073aed66f27c40cc61634d26757f58909994253e8c24f544666a665afef4e47e780af6e8db81efbd3d15f3d1bc746121d087ae4340c68ef3b8e8ffa3c625c40f8f67989477c2554bda898ec7ca011b9fcbe41d8fd4e7e5cfcb7a21ce9beb4e0ea846bebf7bcae8a94473832c03b8e6257800e279cb2c33525016dfb9900349f5[/secured]"/>
+			<k name="lookupdb" cs="[secured]0156113c233834b91a6eda1703aed2a3de66c1304349fdf0b0cab6e4fd8e355e6b5e2da32716b2151d84211d88f008c4596e6e1dc5ffade441a65c42cbb06fe1c6f3d1f235171b0153fda3b2bfceae880664e74911dccc6dc41dddcd08742a30d2be5e8a0792d8177108680fe36cafa488a8f22aeb30a40dc5f647fd837928bd617596cb60326b91293ee11d1f905991beb319a0b5185ab038e58eea1e54fcc4dbe704c9f3dfca954c6d912ccb808d3c478ea2f1a567f035bfba38bc7c86f255bec1f9d8e8c369361ad9db6aa6fc7a1a319ed1cba7e61a8ba5050e1e0c639383a94644f184e76d65c6cd648201e207a997[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01ceca53f67fecdc41fd23c131bde2f0524e81ba279c83cb3b7a3b18e8fa0469303610ecc6fe2ea82a15848489de394841c15302ab5c31c34dedebc4b3bba0bc48[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="9" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 14:45:16.531 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01e38f81d4ac46bbb2ebfae7502d6de134f8f336c98809010e3d16d4735c9fcc6efd9e9fe47d87f039c0b1828f986bc6577dfbcc93a814b2b5a867d1dfe1f12dd12673c17e3f09f8ba9fb40a755470334cae72896f8f7ec0d0c95e0e5a17258e0315f43935e1de56fcd7a3a49da7b492b76ff97b9aceed6266ee41128468c6505d186922821b100a9a248fc079080fe2e7021c08ee68236be156a210e973999a3c[/secured]"/>
+		<k name="tmadmin" cs="[secured]011697f79f3fa28aa2acb5c5308f2407d3955e30188070a7a12c4b8a20b17e9710300209537f6b3e51af43fe4ce258adc0cdb49fc02a1e9e5da683e6b8f09a9c5741f6606a08cfae8375710b901466c58ce73d32871ff619481f628162111ccf6e075a3ac4262183a214dbb0010eca835dd01b4ab6d14b1cdd7fc27d0eb6500fb4c82595cc559898a9d5d0d1f715136f7f84a978f3c6a203e791842b6f56d80837[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]0175d3ac5dc25b331edaf3d5e83adf996e7220e09b6f4d6e151eea6e2deb44bbd9019f62437d0f6eeeca5791e6c85187b1fed49913ceea81637c441bda21f346ee073aed66f27c40cc61634d26757f58909994253e8c24f544666a665afef4e47e780af6e8db81efbd3d15f3d1bc746121d087ae4340c68ef3b8e8ffa3c625c40f8f67989477c2554bda898ec7ca011b9fcbe41d8fd4e7e5cfcb7a21ce9beb4e0ea846bebf7bcae8a94473832c03b8e6257800e279cb2c33525016dfb9900349f5[/secured]"/>
+			<k name="lookupdb" cs="[secured]0156113c233834b91a6eda1703aed2a3de66c1304349fdf0b0cab6e4fd8e355e6b5e2da32716b2151d84211d88f008c4596e6e1dc5ffade441a65c42cbb06fe1c6f3d1f235171b0153fda3b2bfceae880664e74911dccc6dc41dddcd08742a30d2be5e8a0792d8177108680fe36cafa488a8f22aeb30a40dc5f647fd837928bd617596cb60326b91293ee11d1f905991beb319a0b5185ab038e58eea1e54fcc4dbe704c9f3dfca954c6d912ccb808d3c478ea2f1a567f035bfba38bc7c86f255bec1f9d8e8c369361ad9db6aa6fc7a1a319ed1cba7e61a8ba5050e1e0c639383a94644f184e76d65c6cd648201e207a997[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01ceca53f67fecdc41fd23c131bde2f0524e81ba279c83cb3b7a3b18e8fa0469303610ecc6fe2ea82a15848489de394841c15302ab5c31c34dedebc4b3bba0bc48[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="10" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 14:50:56.759 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01e38f81d4ac46bbb2ebfae7502d6de134f8f336c98809010e3d16d4735c9fcc6efd9e9fe47d87f039c0b1828f986bc6577dfbcc93a814b2b5a867d1dfe1f12dd12673c17e3f09f8ba9fb40a755470334cae72896f8f7ec0d0c95e0e5a17258e0315f43935e1de56fcd7a3a49da7b492b76ff97b9aceed6266ee41128468c6505d186922821b100a9a248fc079080fe2e7021c08ee68236be156a210e973999a3c[/secured]"/>
+		<k name="tmadmin" cs="[secured]011697f79f3fa28aa2acb5c5308f2407d3955e30188070a7a12c4b8a20b17e9710300209537f6b3e51af43fe4ce258adc0cdb49fc02a1e9e5da683e6b8f09a9c5741f6606a08cfae8375710b901466c58ce73d32871ff619481f628162111ccf6e075a3ac4262183a214dbb0010eca835dd01b4ab6d14b1cdd7fc27d0eb6500fb4c82595cc559898a9d5d0d1f715136f7f84a978f3c6a203e791842b6f56d80837[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]0175d3ac5dc25b331edaf3d5e83adf996e7220e09b6f4d6e151eea6e2deb44bbd9019f62437d0f6eeeca5791e6c85187b1fed49913ceea81637c441bda21f346ee073aed66f27c40cc61634d26757f58909994253e8c24f544666a665afef4e47e780af6e8db81efbd3d15f3d1bc746121d087ae4340c68ef3b8e8ffa3c625c40f8f67989477c2554bda898ec7ca011b9fcbe41d8fd4e7e5cfcb7a21ce9beb4e0ea846bebf7bcae8a94473832c03b8e6257800e279cb2c33525016dfb9900349f5[/secured]"/>
+			<k name="lookupdb" cs="[secured]0156113c233834b91a6eda1703aed2a3de66c1304349fdf0b0cab6e4fd8e355e6b5e2da32716b2151d84211d88f008c4596e6e1dc5ffade441a65c42cbb06fe1c6f3d1f235171b0153fda3b2bfceae880664e74911dccc6dc41dddcd08742a30d2be5e8a0792d8177108680fe36cafa488a8f22aeb30a40dc5f647fd837928bd617596cb60326b91293ee11d1f905991beb319a0b5185ab038e58eea1e54fcc4dbe704c9f3dfca954c6d912ccb808d3c478ea2f1a567f035bfba38bc7c86f255bec1f9d8e8c369361ad9db6aa6fc7a1a319ed1cba7e61a8ba5050e1e0c639383a94644f184e76d65c6cd648201e207a997[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01ceca53f67fecdc41fd23c131bde2f0524e81ba279c83cb3b7a3b18e8fa0469303610ecc6fe2ea82a15848489de394841c15302ab5c31c34dedebc4b3bba0bc48[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="11" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 15:34:36.375 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01e38f81d4ac46bbb2ebfae7502d6de134f8f336c98809010e3d16d4735c9fcc6efd9e9fe47d87f039c0b1828f986bc6577dfbcc93a814b2b5a867d1dfe1f12dd12673c17e3f09f8ba9fb40a755470334cae72896f8f7ec0d0c95e0e5a17258e0315f43935e1de56fcd7a3a49da7b492b76ff97b9aceed6266ee41128468c6505d186922821b100a9a248fc079080fe2e7021c08ee68236be156a210e973999a3c[/secured]"/>
+		<k name="tmadmin" cs="[secured]011697f79f3fa28aa2acb5c5308f2407d3955e30188070a7a12c4b8a20b17e9710300209537f6b3e51af43fe4ce258adc0cdb49fc02a1e9e5da683e6b8f09a9c5741f6606a08cfae8375710b901466c58ce73d32871ff619481f628162111ccf6e075a3ac4262183a214dbb0010eca835dd01b4ab6d14b1cdd7fc27d0eb6500fb4c82595cc559898a9d5d0d1f715136f7f84a978f3c6a203e791842b6f56d80837[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]0175d3ac5dc25b331edaf3d5e83adf996e7220e09b6f4d6e151eea6e2deb44bbd9019f62437d0f6eeeca5791e6c85187b1fed49913ceea81637c441bda21f346ee073aed66f27c40cc61634d26757f58909994253e8c24f544666a665afef4e47e780af6e8db81efbd3d15f3d1bc746121d087ae4340c68ef3b8e8ffa3c625c40f8f67989477c2554bda898ec7ca011b9fcbe41d8fd4e7e5cfcb7a21ce9beb4e0ea846bebf7bcae8a94473832c03b8e6257800e279cb2c33525016dfb9900349f5[/secured]"/>
+			<k name="lookupdb" cs="[secured]0156113c233834b91a6eda1703aed2a3de66c1304349fdf0b0cab6e4fd8e355e6b5e2da32716b2151d84211d88f008c4596e6e1dc5ffade441a65c42cbb06fe1c6f3d1f235171b0153fda3b2bfceae880664e74911dccc6dc41dddcd08742a30d2be5e8a0792d8177108680fe36cafa488a8f22aeb30a40dc5f647fd837928bd617596cb60326b91293ee11d1f905991beb319a0b5185ab038e58eea1e54fcc4dbe704c9f3dfca954c6d912ccb808d3c478ea2f1a567f035bfba38bc7c86f255bec1f9d8e8c369361ad9db6aa6fc7a1a319ed1cba7e61a8ba5050e1e0c639383a94644f184e76d65c6cd648201e207a997[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01ceca53f67fecdc41fd23c131bde2f0524e81ba279c83cb3b7a3b18e8fa0469303610ecc6fe2ea82a15848489de394841c15302ab5c31c34dedebc4b3bba0bc48[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="12" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/23/14 15:35:19.3 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]010c31e8c3404d6139e939fa7b703deb969fb43fb173a4ef397b2a0b59b29ad2ec92e61f24af4fa422c09bc79e4ec6e98fd9795b056b486d5a869f022e6b7cecf96313998e45fe34106c0e50c7c641888901cee632b22d4e77c8c1942f9967eb322eb11e8cd4d2259f5bc9f2771044b0b02171528fb81e99767670e63ec8d833d9068149d5dd07321edc52b138402bb2bdffbc655bb9c7b1f748d9630ae535bdba[/secured]"/>
+		<k name="tmadmin" cs="[secured]0140651e4fe3c89156f455d05d263a74b69c203d9f6d021c7094e02f3a0903bc72d5a683a0338494436c519657ffa9eb29e0e8289e3959203c0042f4639adac579209a029354ca7b82684efffa967700985906416e9bcf96a2da9031cacdaa259ca7ffbf719ca01bb24e592014fac6bc770eb5cd8433f7f0f43890577ea105cf6ecb0ed15cdc00f9ca43d64d558bc805b71c768728271060abb585ba13825152bb[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01f53ba149ddfbd16300b3e44b63043c155dbf266d739c6b73d06e08f0c85651c3815e4c37c66f6353febf4d2f60d869ad03d18155b101bf5308d2fc2eb3e6d0196962826285906e7d077a099ccecc36e6d950d05e93fae063c9bbb8bbdd6cbcaa7614a4906be2dcaeea83e64c4249ad04237bef50d344dc7c9ce68d993c742db17441b266e15e23028c2b2582b4de4aeb019179b012ecd03e9c51c3fc1e3febe39b4492c507d3f4b1974e4cb9edfc6e8ca03721926fee344b9cfc6d64bbee418e[/secured]"/>
+			<k name="lookupdb" cs="[secured]01d93cbecb3b51b88b9a52561fca8b9b0d7c6dbe79c0a58ab65b273ea9faa09adf313f9e4f3e3e0f7323ce3e63980abc2d4c3e9a9b32c63f8ad3fe303c34db5d6b0cda488ff96b197dba5383e9cef185ffdc51dc5ebbb06b74b3ed8d18ad1d387995415e3c0db0dfda9dcaeef630d845ce3182c2fca394c20e048559b1bce4fd49b831685ab26877bd3d7e5d20e03a90d84ddbf6e5fb6c38870b21249898e341c8bd6949b3dc972dc853ffb395077cdc68c361ba010aed8ebf89418508535dc8aa22c3cfe6d89df03540f2e886e0f4c5ce1b44f51f8e5a11c0284f42bdbe10672c287747adc3db7e3b350ca43e2415df9c[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01c1e40dfead9f3832bd264d49e8d64c0b8eaa5620edaa1e2463a5d07e83e7bd4cca0948deab5d1f7352d599ede16e1d1a8eeb12ff593549a91894060fe3831979[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="13" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 17:31:56.365 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]010c31e8c3404d6139e939fa7b703deb969fb43fb173a4ef397b2a0b59b29ad2ec92e61f24af4fa422c09bc79e4ec6e98fd9795b056b486d5a869f022e6b7cecf96313998e45fe34106c0e50c7c641888901cee632b22d4e77c8c1942f9967eb322eb11e8cd4d2259f5bc9f2771044b0b02171528fb81e99767670e63ec8d833d9068149d5dd07321edc52b138402bb2bdffbc655bb9c7b1f748d9630ae535bdba[/secured]"/>
+		<k name="tmadmin" cs="[secured]0140651e4fe3c89156f455d05d263a74b69c203d9f6d021c7094e02f3a0903bc72d5a683a0338494436c519657ffa9eb29e0e8289e3959203c0042f4639adac579209a029354ca7b82684efffa967700985906416e9bcf96a2da9031cacdaa259ca7ffbf719ca01bb24e592014fac6bc770eb5cd8433f7f0f43890577ea105cf6ecb0ed15cdc00f9ca43d64d558bc805b71c768728271060abb585ba13825152bb[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01f53ba149ddfbd16300b3e44b63043c155dbf266d739c6b73d06e08f0c85651c3815e4c37c66f6353febf4d2f60d869ad03d18155b101bf5308d2fc2eb3e6d0196962826285906e7d077a099ccecc36e6d950d05e93fae063c9bbb8bbdd6cbcaa7614a4906be2dcaeea83e64c4249ad04237bef50d344dc7c9ce68d993c742db17441b266e15e23028c2b2582b4de4aeb019179b012ecd03e9c51c3fc1e3febe39b4492c507d3f4b1974e4cb9edfc6e8ca03721926fee344b9cfc6d64bbee418e[/secured]"/>
+			<k name="lookupdb" cs="[secured]01d93cbecb3b51b88b9a52561fca8b9b0d7c6dbe79c0a58ab65b273ea9faa09adf313f9e4f3e3e0f7323ce3e63980abc2d4c3e9a9b32c63f8ad3fe303c34db5d6b0cda488ff96b197dba5383e9cef185ffdc51dc5ebbb06b74b3ed8d18ad1d387995415e3c0db0dfda9dcaeef630d845ce3182c2fca394c20e048559b1bce4fd49b831685ab26877bd3d7e5d20e03a90d84ddbf6e5fb6c38870b21249898e341c8bd6949b3dc972dc853ffb395077cdc68c361ba010aed8ebf89418508535dc8aa22c3cfe6d89df03540f2e886e0f4c5ce1b44f51f8e5a11c0284f42bdbe10672c287747adc3db7e3b350ca43e2415df9c[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01c1e40dfead9f3832bd264d49e8d64c0b8eaa5620edaa1e2463a5d07e83e7bd4cca0948deab5d1f7352d599ede16e1d1a8eeb12ff593549a91894060fe3831979[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="14" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 17:32:12.963 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]010c31e8c3404d6139e939fa7b703deb969fb43fb173a4ef397b2a0b59b29ad2ec92e61f24af4fa422c09bc79e4ec6e98fd9795b056b486d5a869f022e6b7cecf96313998e45fe34106c0e50c7c641888901cee632b22d4e77c8c1942f9967eb322eb11e8cd4d2259f5bc9f2771044b0b02171528fb81e99767670e63ec8d833d9068149d5dd07321edc52b138402bb2bdffbc655bb9c7b1f748d9630ae535bdba[/secured]"/>
+		<k name="tmadmin" cs="[secured]0140651e4fe3c89156f455d05d263a74b69c203d9f6d021c7094e02f3a0903bc72d5a683a0338494436c519657ffa9eb29e0e8289e3959203c0042f4639adac579209a029354ca7b82684efffa967700985906416e9bcf96a2da9031cacdaa259ca7ffbf719ca01bb24e592014fac6bc770eb5cd8433f7f0f43890577ea105cf6ecb0ed15cdc00f9ca43d64d558bc805b71c768728271060abb585ba13825152bb[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01f53ba149ddfbd16300b3e44b63043c155dbf266d739c6b73d06e08f0c85651c3815e4c37c66f6353febf4d2f60d869ad03d18155b101bf5308d2fc2eb3e6d0196962826285906e7d077a099ccecc36e6d950d05e93fae063c9bbb8bbdd6cbcaa7614a4906be2dcaeea83e64c4249ad04237bef50d344dc7c9ce68d993c742db17441b266e15e23028c2b2582b4de4aeb019179b012ecd03e9c51c3fc1e3febe39b4492c507d3f4b1974e4cb9edfc6e8ca03721926fee344b9cfc6d64bbee418e[/secured]"/>
+			<k name="lookupdb" cs="[secured]01d93cbecb3b51b88b9a52561fca8b9b0d7c6dbe79c0a58ab65b273ea9faa09adf313f9e4f3e3e0f7323ce3e63980abc2d4c3e9a9b32c63f8ad3fe303c34db5d6b0cda488ff96b197dba5383e9cef185ffdc51dc5ebbb06b74b3ed8d18ad1d387995415e3c0db0dfda9dcaeef630d845ce3182c2fca394c20e048559b1bce4fd49b831685ab26877bd3d7e5d20e03a90d84ddbf6e5fb6c38870b21249898e341c8bd6949b3dc972dc853ffb395077cdc68c361ba010aed8ebf89418508535dc8aa22c3cfe6d89df03540f2e886e0f4c5ce1b44f51f8e5a11c0284f42bdbe10672c287747adc3db7e3b350ca43e2415df9c[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01c1e40dfead9f3832bd264d49e8d64c0b8eaa5620edaa1e2463a5d07e83e7bd4cca0948deab5d1f7352d599ede16e1d1a8eeb12ff593549a91894060fe3831979[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="15" modder="obsadmin.SS-OBSTEST3.SSNIT-DM" dt="03/23/14 20:28:13.996 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]010c31e8c3404d6139e939fa7b703deb969fb43fb173a4ef397b2a0b59b29ad2ec92e61f24af4fa422c09bc79e4ec6e98fd9795b056b486d5a869f022e6b7cecf96313998e45fe34106c0e50c7c641888901cee632b22d4e77c8c1942f9967eb322eb11e8cd4d2259f5bc9f2771044b0b02171528fb81e99767670e63ec8d833d9068149d5dd07321edc52b138402bb2bdffbc655bb9c7b1f748d9630ae535bdba[/secured]"/>
+		<k name="tmadmin" cs="[secured]0140651e4fe3c89156f455d05d263a74b69c203d9f6d021c7094e02f3a0903bc72d5a683a0338494436c519657ffa9eb29e0e8289e3959203c0042f4639adac579209a029354ca7b82684efffa967700985906416e9bcf96a2da9031cacdaa259ca7ffbf719ca01bb24e592014fac6bc770eb5cd8433f7f0f43890577ea105cf6ecb0ed15cdc00f9ca43d64d558bc805b71c768728271060abb585ba13825152bb[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01f53ba149ddfbd16300b3e44b63043c155dbf266d739c6b73d06e08f0c85651c3815e4c37c66f6353febf4d2f60d869ad03d18155b101bf5308d2fc2eb3e6d0196962826285906e7d077a099ccecc36e6d950d05e93fae063c9bbb8bbdd6cbcaa7614a4906be2dcaeea83e64c4249ad04237bef50d344dc7c9ce68d993c742db17441b266e15e23028c2b2582b4de4aeb019179b012ecd03e9c51c3fc1e3febe39b4492c507d3f4b1974e4cb9edfc6e8ca03721926fee344b9cfc6d64bbee418e[/secured]"/>
+			<k name="lookupdb" cs="[secured]01d93cbecb3b51b88b9a52561fca8b9b0d7c6dbe79c0a58ab65b273ea9faa09adf313f9e4f3e3e0f7323ce3e63980abc2d4c3e9a9b32c63f8ad3fe303c34db5d6b0cda488ff96b197dba5383e9cef185ffdc51dc5ebbb06b74b3ed8d18ad1d387995415e3c0db0dfda9dcaeef630d845ce3182c2fca394c20e048559b1bce4fd49b831685ab26877bd3d7e5d20e03a90d84ddbf6e5fb6c38870b21249898e341c8bd6949b3dc972dc853ffb395077cdc68c361ba010aed8ebf89418508535dc8aa22c3cfe6d89df03540f2e886e0f4c5ce1b44f51f8e5a11c0284f42bdbe10672c287747adc3db7e3b350ca43e2415df9c[/secured]"/>
+			<k name="vscanimagedir" v="C:\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01c1e40dfead9f3832bd264d49e8d64c0b8eaa5620edaa1e2463a5d07e83e7bd4cca0948deab5d1f7352d599ede16e1d1a8eeb12ff593549a91894060fe3831979[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="16" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/23/14 22:19:19.47 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01211ff49d08e8b9cba1927ba8e0323679ac1e6c593cb4d2c4a9de018f9cffa6727818071bd1b448ec6a7145cf44c03be9ae718428e771bcae60f1e0098da195a172c32332c43a2e459a332e5287783b0d0a21f745880b62d355876fb7c40d53a022e878cb250eb0fea677b080d1aacf08048eaac51c530e7a2f74716a8f88f381fb93a1698bce5a89120f1e43a9dec2ced070148d0812927ee22af19bb1f0d47a96b2265b594891428a330d7e66502c67[/secured]"/>
+		<k name="tmadmin" cs="[secured]01e08f2e144e9ccd8d68d7064f808aee45a63aeccdc6dc5aa1ec4e07d0fddcae852b1c6939507bd965097f431022276364824990b0e190672a09afabff5068e871ce7c4ce77072293ac887966d3be5ccce17abad4c3ba236e99e371926d8b0cac5fc849434c718b6ecd238a983095569ed6b2f02d2f33a58ce7d1b57784ed967fbda94f7b6897c8ce13579fec21c15d39287930d39b0ec779f363669ef9322972e12d48335dca048de0bda98754f5e62cd[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01a04a8fd8b0453ef31d15a25db9cadbcf8a99a6702c17feffd9322adf36fea86ed7148bd62aa18547ba71822aa744f327878dd770b79394f30481501ebf9c5ed78ebd9c4a18baa4dea02337296b9e5f67c99e7a360657977f263dfd65e5238413231e25a8b718c58b4b11f8349fdc96eeb48a5a55d8fc0c26c7409f887af925b5441d73986f9a3536f7550da08374be078a79cdf7b68fcbf7a2916dd502c874f02d211fb6e4d6ef81d5834aea30e8e6cf058e25200ed3c3ec2e9396e7c030761da3fddb37f6248dcdc3a1c7eefa0db56c[/secured]"/>
+			<k name="lookupdb" cs="[secured]012dbf0e124da8e2b4739b1e1e47651d40e5e0cbcdde4c0d91b45aed0574fa540250173fc79c38133ad8d93ec745893467a2bc848652b30c5baacca863bbf64d61a8b68c70d300a30c1767b1abe5fe56acf4a86f0b8a56c47fd124009c7bff9df67532394679adea0a945334efd7c7b00f30cd45cba7369cac2dc7a86ce59448e375a3518c712275c8dcc19378fcb1ca30ef7b0e475c550faf5aa9f38358f986187e96b04919f34ba6539710324a898c549faaa5e751c7f87353053fd8d6e25ad0c1fe3db58c65e1973fdeacf9a5627d59cca3a115e62ebbb70b01a23dfd9a2808f27f5af32f1a938f7d6e01ca39b0d5b0e7e9e47b1d7a14b84654d36102312a35[/secured]"/>
+			<k name="vscanimagedir" v="\\10.1.1.14\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01526c834e9487d336786c5c25f98b7ed4782add78e678491cc4cd69e54ed09ad56429e990906d422dc0f6479899cf3a22729fa03600d82925dd1865ab51c04da1[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="17" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/23/14 22:21:32.932 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]010bb5b633b9a8b592a78b1fdcb943ad2fdb4af301618e36d0b357ee568a8acb69b4072cc819939ca0b3a56ca78fa42e0d6197350aa6ebfdff0fc838543c708c72e770329bdef3a9d7b525c41bae0d5e1247ea9c51ae01971439fea7169c3fa5f4f2390b710ec1e547e41bd31e49eb3c39cc27f7f439a55f0844ceb55055b00a81be1759b993dd466340c109491f85612e450bbfe429918837216005f22eaa5107a0b68b6b1502abcd8f59b012366efb5c[/secured]"/>
+		<k name="tmadmin" cs="[secured]0198d1419a0f723b5099ae80b62282f523c4c9455c7928c47477ee28891a319d31f22e6587d4a651e2d79616e9fd9343339052c96bc4baf35a79cb4bedbbf2f38913456a6ff6596f03109f69f7edca6945373b5b537f212c57b9a32c174006b1f7999913921fdc29eec5dc235ff3ec976a82c30734524510be376ccaefede34f0030c316f0f9240d1566406342b1e94c8d86267095dd85d242c8e44e63de085b2d592917bb7a2930f525b522afe6025d56[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01acf32bab568189572feb0654406e7157868363fe6726af4382a5391cfb30bbed25de7b47bba603731acf71de520ae1c0cd0698c3eab034e8d0eeb7d23024dfbf25acbd346bdbd76579535edee22c288f46da4b7b7f3ea6d2aac8c6a36197710f19b60f002636db80034131d661b131b7f0379ede69377a4e7f76048d26af2332e6937373d284c91845c12210f68f06d4ba37d3b84dd2fb2474bd4425a14cb3a6b92c82a67643f50334749638a4427eff08c7ac6088dd9692dfc345e371638b9b27601207397c59c0105e4042883994c9[/secured]"/>
+			<k name="lookupdb" cs="[secured]01bf825fb096f87567b512c42e3a5325d15f56c09bb90d71697b6fe58c75b6327cb405b45c4838a226800cbb6dafbba56b4ae4e3be8b9ee7a64b801157b58c70a8c6992e2dbc89c510e7cfdaa0214165542bc93184e0a3ccef800bcd65b75b3032cb4ed37c34f524941c76ce59f96f34aba192ae41554c59fe7e0482f15b6fccfb04268507d9e93813dde25132cb996fd692596e528e852794c0402ac7ffb676213eb8f634f5ea8bb2d41d3aa71430331db147396e06045b6d31058b364a9373f421817ac3fb36a4328fd69090daed665a15b14475cdd79d5da1ce707c0dbcf67139db0519247d0525421efe302bd8e2c27fab253d6889c213f8ea187f13d25165[/secured]"/>
+			<k name="vscanimagedir" v="\\10.1.1.14\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01fd21b10d5a76a8a45a923b0993ff4d3675619d50ae15445cd166d43b49559cf0cbefd248752467754a64294798fc561f1196b3a403c47b4d1137670538f7902c[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="18" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/28/14 23:20:37.419 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01215849ccdcf50fd49b27e6b44eef6f8c9461584b20e4f78fe2b0467cfeea5cf1ccb9162277597c8bfc8579f995d76ecc9db649db1f276e67e742462c51212ef370c6992508152622d309e88ca140b527d12e918e997ff46f014b4274e200c55004280df7e384a4769fb0db98614c5468aa6dec364789bed90c193f893e13b5808c622b1996243b0480ae3dd561cfb2c5f2a24e4d23fd745e816626e2503029f847ecedd8c3bdd7b1d78b3f2872d97aca[/secured]"/>
+		<k name="tmadmin" cs="[secured]0191115c8aeaa19ed1e37c353d8b7b46d00759e1da7c674c8704de350f4de131f4ab4c6c0f8ea81ce157fab9f93684d17b21cdc43645cf9b9250335b1e78c00ea0976464206ef7b2fdb79e799af116ef7463e7002e2eee8036b359a547ac721bccb2cd2f39a3a4e710a147c1ce78c3c5c469ff03451400a3893a84a89e2a1fda47b4843230e3a998b27d148dd8378b3b65ab49244bbf7b9724edba5c7936e68a713871609d7af8d8586b2eab5bade8a1f1[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01418cf2968da33d1db6fffcaf4c8c0e6c19c5a35007e8f09ce6319bad618be10aaca7360de5d8f7c0d0a003796c3e017097fc1a47a374c47a28de80969b6829ca2883847d3001eb59005d2fbdb94d7e34972258b1d6204d7f0b742c6643bae67970d78792fecfd61426448356e25152196d804903cf17fd90e7070cc550f1964f7a14dcbedf8e03f90610cb66fa44435076dc956304ac16abbc8774ca225761af8a8ed702c94a65d0d8140b2001e80fb123a23bac857835466480f70635e5a3ab0ee3342b9e9b8002c9a9f614517db867[/secured]"/>
+			<k name="lookupdb" cs="[secured]0172128ab59182eaf2812b083773a4fbbce3dad4bfe635722515414662c09a663f12586264c86a59ae84d2499c68519384c3becfc3682e6ba0f64ce4ac7a08497c128b234bf24f13aa398cf92eff146f492e2dc9805cbf2e973e016143a039f8386e40a687f253b18f5710a09c2bd174cea1c53f5018e5cfada3025a2f890814cebc9240d9e332a16c8ae40f009aa6d9e1f35345733995deae0ffe085d4c677c17e58aec7d4b8910d8319aad3644f88b9c1193b240de519caee33fa9ce73611abf7d0c66d080357514fdde2618062e9868f6b7cba71c191a675a2cf888336ad6b6a736be7154c3c0e2ae0140e21368e1e9b6f3db399beb238f470ffd9fcbd32f08[/secured]"/>
+			<k name="vscanimagedir" v="\\10.1.1.14\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]016f5e3ba92b5f626776f4b0bf3aad812b5265b4306d89d1d33d9ece29c9a0d38123449ec4c1c6f63f8df7bb74e710b9f403a883f5577d168f407139ea223cfffb[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="19" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/28/14 23:29:14.749 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]01cf0cb9170627aa3b00a5acce96c7c3b91db1173f2be9fdda455bb2d8f640b73f2e4e1d7f3e73d3a63d2acce2e79622e5dfc950bd2cc61c7e96055ea19af2556695c637fdccb600c5dc4fa35677e9244cb9345af547215ede17c89f49dd471ff3f42351d96be0241054a0a49147d00d2861497dc46b6b1f5047cc8d60769afc0a5c7bbf0dac5ffc13528f8f6447878131021bc5399a17929a627bbe6df72e2ab5ce82bb8d5155172d75db3819874bef0f[/secured]"/>
+		<k name="tmadmin" cs="[secured]01100582140969e959f5d8ba7194e53c643be8493a0273c742d90bf228a3e4c53e92a4c474326fc3e9dbdae0d03076860f85aa971a62ff542a63f87ead335012e6c6aeb83568675c416cf8c88dee2cc41dbdedf7ca723500c33292c14ae8dd89791e66a435987f07f4f33e94fd885ad97401429f675490a1bb48c3ee7c88db6855c259ef81a44ae5a1fc25700f26e9a6bb6d5b802d8aed74dceaa449a22765a25231c2a14a0644bd263826071c136b5ade[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]01c43845ffe3939873ee67ff0584f6adda2babd63898c48b68fcd9c6b55acecf80953d6ddf6d2ff9cd85aa106b9dc309539be16b1f07e13207eeb6e9c29f5149e40f65675a10b2e75bf939106687fbbb53ab82c66f3a526bdc5f927986c604979034222cb6f452ec1207d7e005470e3973e8fe699b104c87a568ae2318a75f813f05c5d40f8fe0022f15b6a35bffd1d7ef0836d18b9b1dd61023d8a7f960ba4b6b9dd5874a73eb68cc3d89347bdb30ac57de6e506391cfe914e8566f248ad8b4fb0e40049e734a72f995f71104ab8d4afb[/secured]"/>
+			<k name="lookupdb" cs="[secured]012676e2ce018361d33c6946ed6b5e7e809d349af338269acf9c1d28edb0cdb026e5b904a1e12745c5ff614a6e03bef002279b1e4dfb84127831ed60b7960ba0d11fff6c76b945e71a9c00434e1ff6774795dac3720496228999fd7a62a2942594d87edf6eae9b93cbe818c3a2bf27689941ed915fcbd119e7f1d1d3a252a3b1fd9db40021efd812940663662957218d796ede63e057d376ea0880fb5367758dc44e9012aabfc3555a2411a4526b6b15e35db73e16e55788f7101667f27bafa44eb93b8b568d87ade999eca2d72815e05fbddc5bacb0198898b17c989e5a111c7430da1ba9a2b84bfdadc6894f515daf31e972a0776cc1a45b55065afdf58fbfaf[/secured]"/>
+			<k name="vscanimagedir" v="\\10.1.1.14\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01a24d22825ec6c96298d066148791d02d510f690efd2dd1413b09a2237bda0c2176e7f7434255ee2cd0fdfbe2e514015f30e5908b642284e66b455543f4f592e1[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+	<app name="SSNIT" ver="20" modder="obsadmin.SS-OBSTEST2.SSNIT-DM" dt="03/28/14 23:29:21.849 " src_ver="2">
+		<k name="tmservers">
+			<k name="tms" ip="10.1.1.14" port="2402" retry="3"/>
+		</k>
+		<k name="runtime" v="batches"/>
+		<k name="tmengine" cs="[secured]0122db4830d4a28f69d46955d9ecbb779a23431edbfd7c839d4d96a3152afaace556cb8b03bb7a8619c82d9eb3dd9b6268891ccb88682c3cc56c2f2aa504e738173fb658a464a261f2b7b78f2ecdf91990f6e662588a1a8062d6db53c31a084bb2b7071ec18a1373c2f8b3953212af7dc0ffd50c359d7470683aa3979c25bef88afed3375b4d63ee90c9fdb054ebec2d1344b0c4dc1cad48cac6962d2fe7aa534bea31e72668b50b09f9f2c87bf94a841a[/secured]"/>
+		<k name="tmadmin" cs="[secured]01447c8076e714b148a4441731524b5b3390a3f7fd0ac02c78a5379b1277753dac2967a7da39648386423d48b44fb121c1636eb1ae2b95e50dcefa5ee003a1545bfda7c35cf8359996f569b8a3e5e3ba05f0e8fafa4a0de4be4b7620f2e9aa5f4cbf4b5785ca8e757552c17f263744575e81a685fc5962898a8b840cb1b4143c1a63c8eeb2f4facaadcb391373259fc98a73b6712bf74e13f1f38416bfd37b495ff6d15b5901bce9bf5c0be71aa9dd09a6[/secured]"/>
+		<k name="dco_SSNIT">
+			<k name="setupdco" v="SSNIT.xml"/>
+			<k name="rules" v="rules"/>
+			<k name="imagefix" v="imagefix.ini"/>
+			<k name="UseFPXML" v="False"/>
+			<k name="fingerprintconn" cs="[secured]0102946c88fa094b7399411f7e9430dcec90eee30305c1cf066b52864489c678e1c8b9a8c62460049865d0136f213ba91838911fa9b15e75f98e72cf8cae33cb936f498d3adf1303aea77a547a99b97ff19881ca9bf36f9ce8406f554bc2906e3eac0665647dc4d3731a68aa07f653d4bbc0b8a77115d5209e938635479678105ced982ebea9b35b0f43214f02e59bff1c75908215b4cb302084c3a5be63d1899b21c5c14bedd948fe76d14cb24229edff8e2897665e7f4ae644d2d6514b4d4505845f25e80f5997b6ea9cb86c78a0a536[/secured]"/>
+			<k name="lookupdb" cs="[secured]01bc4626540eed7fbda5cf10aa5669f1d92a6ace80edb7e0b3327c06cee19d7fb842f585a677734bc6233703a0498e0a43bc577e5d3eb08190d2960796c380e215d88a90ea89f8a18c9d16821a902d630c629fe03e68bed79245220cba127482c9f68834613b48d60474746bffd4abc4162f662188799c607c19ddf919e56b2cfb8eaceebe81894722bcae2e8375aad6d1def3f82b1ee0329455ace58ac5a4ad6fc131a31cb05ad5bae960a7f93b38bc1c1f0d6261561b297a4df60a5b6db7aaf7581d3119a6ed4813204f764be941f8e839245cf3d4c1170dd1f4a94de5a29bc7d97773967894274a0b09b7ef115df250989a68f76326cd027deed2d5891b432f[/secured]"/>
+			<k name="vscanimagedir" v="\\10.1.1.14\Datacap\SSNIT\images"/>
+			<k name="exportdb" cs="[secured]01ba2daaaa632aeceda46a8609ae2baa5ec6067eda0de67075bcba9451d09e1a283b00725970136787a4a20c40c69895c1f7d918ed742f111c5b75d2ab147edfae[/secured]"/>
+		</k>
+		<k name="fingerprint" v="fingerprint"/>
+		<k name="export" v="export"/>
+		<k name="tasks">
+			<k name="VScan" profile="VScan"/>
+			<k name="PageID" profile="PageID"/>
+			<k name="Profiler" profile="Profiler"/>
+			<k name="Export" profile="Export"/>
+		</k>
+	</app>
+</archive>

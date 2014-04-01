@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="16" name="Export Heitech" ver="14" modder="admin.1" dt="03/04/14 01:50:50.868 " src_ver="13" qi="">
+	<rule name="Export XML Heitech" id="1" qi="">
+		<func name="Function1">
+			<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+				<p name="ID" type="String" v="@ID"/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a name="rr_AbortBatch" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export XML DocList Heitech" id="2">
+		<func name="Function1">
+			<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+				<p name="ID" type="String" v="@D.id"/>
+				<p name="AppRefNo" type="String" v="@P.ApplicationReferenceNumber"/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a name="rr_AbortBatch" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,18 @@
+<ruleset name="Assemble" id="5" ver="1">
+	<rule name="Create Docs" id="1">
+		<func name="Assemble: Document Function 1">
+			<a name="CreateDocuments" ns="DCO">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Create Fields" id="2">
+		<func name="Assemble: Page Function 1">
+			<a name="CreateFields" ns="DCO">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

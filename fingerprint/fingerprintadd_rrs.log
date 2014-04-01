@@ -1,0 +1,157 @@
+Log started Mon Mar 31 20:23:07 2014
+------------------------------------
+20:23:07.86 (0)	Workflow "" paths: runtime="\\10.1.1.14\Datacap\SSNIT\batches\"; process="\\10.1.1.14\Datacap\SSNIT\dco_SSNIT\"; setup dco="\\10.1.1.14\Datacap\SSNIT\dco_SSNIT\SSNIT.xml"; runtime dco="C:\Datacap\SSNIT\fingerprint\669SSNIT.xml";
+20:23:07.86 (0)	script:init [m0x=51f0ad4]
+20:23:07.86 (0)	/script:init
+20:23:07.86 (0)	add object [id="dco"] to script
+20:23:07.86 (0)	/add
+20:23:07.86 (0)	add object [id="DCLogX"] to script
+20:23:07.86 (0)	/add
+20:23:07.86 (0)	add object [id="Pilot"] to script
+20:23:07.86 (0)	/add
+20:23:07.86 (0)	add object [id="Applications"] to script
+20:23:07.86 (0)	/add
+20:23:07.86 (0)	add object [id="Application"] to script
+20:23:07.86 (0)	/add
+20:23:07.86 (0)	add object [id="RRState"] to script
+20:23:07.86 (0)	/add
+20:23:07.86 (0)	add object [id="RRError"] to script
+20:23:07.86 (0)	/add
+20:23:07.86 (0)	execute statement On Process Start
+20:23:07.86 (0)	   nothing to exec
+20:23:07.86 (0)	/execute statement On Process Start
+20:23:07.86 (0)	rrs execute: mode="release"(0) flowmode="run"(3)
+20:23:07.86 (0)	ruleset:
+20:23:07.86 (0)	   execute statement On Ruleset Start
+20:23:07.86 (0)	      nothing to exec
+20:23:07.86 (0)	   /execute statement On Ruleset Start
+20:23:07.86 (0)	   ruleset name="FingerprintAdd" id="8" target object="B" target id="CCO BATCH" target type="SSNIT"
+20:23:07.86 (0)	   dco open tag="B" id="CCO BATCH" type="SSNIT" progress="0"
+20:23:07.86 (0)	      skip: current DCO has no associated rules from this ruleset
+20:23:07.86 (0)	   /dco
+20:23:07.86 (0)	   dco open tag="P" id="FingerprintPage" type="Other" progress="0"
+20:23:07.86 (0)	      rule "FingerprintAdd"
+20:23:07.86 (0)	         result 0[x0] = true
+20:23:07.86 (0)	         execute statement On Rule Start
+20:23:07.86 (0)	            nothing to exec
+20:23:07.86 (0)	         /execute statement On Rule Start
+20:23:07.86 (0)	         func "FingeprintAdd: Other Function 1"
+20:23:07.86 (0)	            execute statement On Function Start
+20:23:07.86 (0)	               nothing to exec
+20:23:07.86 (0)	            /execute statement On Function Start
+20:23:07.86 (0)	            action RecognizePageOCR_S ()
+20:23:07.86 (0)	               no DLL version of RRX "\\10.1.1.14\datacap\ssnit\dco_ssnit\rules\ocr_s.dll": 
+20:23:07.86 (0)	               no DLL version of RRX "c:\datacap\rrs\ocr_s.dll": 
+20:23:07.86 (0)	               load rrx code: "c:\datacap\rrs\ocr_s.rrx"
+20:23:07.86 (0)	                  no DLL version of RRX "\\10.1.1.14\datacap\ssnit\dco_ssnit\rules\rrunner.dll": 
+20:23:07.133 (47)	                  Loading RRX from DLL "c:\datacap\rrs\rrunner.dll"
+20:23:07.133 (0)	                  load rrx code: "c:\datacap\rrs\rrunner.dll"
+20:23:07.149 (15)	 Smartparameter Object created
+20:23:07.180 (32)	 Datacap Global Strings Object created
+20:23:07.180 (0)	 Datacap Global Dates Object created
+20:23:07.180 (0)	 Datacap Global Currency Object created
+20:23:07.180 (0)	 Datacap Global Locale Object created
+20:23:07.180 (0)	 rrunner: loading file v.8.1.0.100
+20:23:07.180 (0)	 Loading CCO:'c:\datacap\ssnit\fingerprint\669.cco'
+20:23:07.180 (0)	 Retrieving locale setting from Application Service
+20:23:07.180 (0)	 Looking for AppSvc Workflow Name key: '*/dco_/locale'
+20:23:07.180 (0)	 Looking for AppSvc Application Name key: '*/dco_SSNIT/locale'
+20:23:07.180 (0)	 Looking for AppSvc General key: '*/locale'
+20:23:07.180 (0)	 No locale setting found in the Application Service.
+20:23:07.180 (0)	 Retrieving Fingerprint DB Connection string from Application Service
+20:23:07.180 (0)	 Looking for AppSvc Workflow Name key: '*/dco_/fingerprintconn:cs'
+20:23:07.180 (0)	 No AppSvc Workflow Name key found.
+20:23:07.180 (0)	 Looking for AppSvc Application Name key: '*/dco_SSNIT/fingerprintconn:cs'
+20:23:07.180 (0)	 AppSvc Application name fingerprintconn.
+20:23:07.180 (0)	 ---------------------
+20:23:07.180 (0)	 rrunner.dcs 8.1.0.100
+20:23:07.180 (0)	 ---------------------
+20:23:07.180 (0)	                  /load
+20:23:07.180 (0)	                  no DLL version of RRX "\\10.1.1.14\datacap\ssnit\dco_ssnit\rules\recog_shared.dll": 
+20:23:07.180 (0)	                  no DLL version of RRX "c:\datacap\rrs\recog_shared.dll": 
+20:23:07.195 (15)	                  load rrx code: "c:\datacap\rrs\recog_shared.rrx"
+20:23:07.195 (0)	                     no DLL version of RRX "\\10.1.1.14\datacap\ssnit\dco_ssnit\rules\cco2cco.dll": 
+20:23:07.195 (0)	                     no DLL version of RRX "c:\datacap\rrs\cco2cco.dll": 
+20:23:07.195 (0)	                     load rrx code: "c:\datacap\rrs\cco2cco.rrx"
+20:23:07.195 (0)	 CCO to CCO 8.1.0.22
+20:23:07.195 (0)	                     /load
+20:23:07.195 (0)	 Recog_shared 8.1.0.64
+20:23:07.195 (0)	                  /load
+20:23:07.211 (16)	 OCR_S 8.1.0.17
+20:23:07.211 (0)	               /load
+20:23:07.211 (0)	               execute statement On Action Start
+20:23:07.211 (0)	                  executing code:
+20:23:07.211 (0)	                  Call OnActionStart()
+20:23:07.211 (0)	               /execute statement On Action Start
+20:23:07.211 (0)	 DCOProcessor is turned ON.
+20:23:07.211 (0)	 Current DCOProcessor state: True
+20:23:07.258 (47)	 DCOProcessor has been initialized.
+20:23:07.258 (0)	 Updated DCOProcessor state: TRUE
+20:23:07.585 (327)	 Setting DCO Processor timeout to 185000
+20:23:07.601 (16)	 Executing 'RecognizePageEx' from 'DCOCRS.Net.OCRSEngine'. Parameter : FingerprintPage
+20:23:28.287 (20685)	 Recognition return status: 0(Recognition successful)
+20:23:28.287 (0)	 Recognition Time: 21.0781
+20:23:28.302 (16)	 MaxHt TMM = 64 yDPI = 600 MaxHt PX = 151.181102362205
+20:23:28.334 (31)	 Average Height for all 234 words is 49.4059829059829
+20:23:28.505 (172)	               result 0[x0] = true
+20:23:28.505 (0)	               action returned true
+20:23:28.505 (0)	               execute statement On Action True
+20:23:28.505 (0)	                  executing code:
+20:23:28.505 (0)	                  Call OnActionEnd()
+20:23:28.505 (0)	 Action esec='21.29688'
+20:23:28.505 (0)	               /execute statement On Action True
+20:23:28.505 (0)	            /action
+20:23:28.505 (0)	            func result: "true"
+20:23:28.505 (0)	            execute statement On Function True
+20:23:28.505 (0)	               executing code:
+20:23:28.505 (0)	               Call OnFunctionEnd()
+20:23:28.505 (0)	 Function esec='21.32813'
+20:23:28.505 (0)	            /execute statement On Function True
+20:23:28.505 (0)	         /func
+20:23:28.505 (0)	         execute statement On Rule True
+20:23:28.505 (0)	            executing code:
+20:23:28.505 (0)	            Call StatCounter():Call OnRuleEnd()
+20:23:28.505 (0)	 DocCount 0,  PageCount 1
+20:23:28.505 (0)	 OVERRIDEABLE:True
+20:23:28.505 (0)	 Rule esec='21.32813'
+20:23:28.536 (31)	         /execute statement On Rule True
+20:23:28.536 (0)	         execute statement Set CurrentObj to Nothing
+20:23:28.536 (0)	            executing code:
+20:23:28.536 (0)	            Call set_CDCOnothing()
+20:23:28.536 (0)	         /execute statement Set CurrentObj to Nothing
+20:23:28.536 (0)	         rule result: "true"
+20:23:28.536 (0)	      /rule
+20:23:28.536 (0)	   /dco
+20:23:28.536 (0)	   dco close tag="P" id="FingerprintPage" type="Other" progress="2"
+20:23:28.536 (0)	      skip: current DCO has no associated rules from this ruleset
+20:23:28.536 (0)	   /dco
+20:23:28.536 (0)	   dco close tag="B" id="CCO BATCH" type="SSNIT" progress="2"
+20:23:28.536 (0)	      skip: current DCO has no associated rules from this ruleset
+20:23:28.536 (0)	   /dco
+20:23:28.536 (0)	   stop: back to the top level and finished it
+20:23:28.536 (0)	   execute statement On Ruleset End
+20:23:28.536 (0)	      executing code:
+20:23:28.536 (0)	      Call OnRuleSetEnd()
+20:23:28.536 (0)	 RuleSet finished with TaskStatus '2'
+20:23:28.536 (0)	 Total Ruleset Action   esec:'21.29688'
+20:23:28.536 (0)	 Total Ruleset Function esec:'21.32813'
+20:23:28.536 (0)	 Total Ruleset Rule     esec:'21.32813'
+20:23:28.536 (0)	   /execute statement On Ruleset End
+20:23:28.536 (0)	/ruleset
+20:23:28.536 (0)	CIMainAlgorithm::Execute::finalize_after_process:
+20:23:28.536 (0)	execute statement On Process End
+20:23:28.536 (0)	   executing code:
+20:23:28.536 (0)	   Quit()
+20:23:28.614 (78)	/execute statement On Process End
+20:23:28.614 (0)	CIMainAlgorithm::Execute::finalize_after_process:SaveDCO:
+20:23:28.661 (47)	unload script [m0x="51f0ad4"]
+20:23:28.661 (0)	   execute statement (null)
+20:23:28.661 (0)	      executing code:
+20:23:28.661 (0)	      Call set_CDCOnothing()
+20:23:28.661 (0)	   /execute statement (null)
+20:23:28.661 (0)	   script released
+20:23:28.661 (0)	/unload
+20:23:28.661 (0)	unload COM m0x="51f0a84">
+20:23:28.661 (0)	/unload
+20:23:28.677 (15)	c:\datacap\RRS\Logs\wrrs
+20:23:28.677 (0)	end log to batch

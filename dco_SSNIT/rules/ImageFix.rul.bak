@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset name="ImageFix" id="2" ver="1">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="ImageEnhance" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v=".tio" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="ImageFix" id="2" ver="2" modder="admin.1" dt="12/03/13 17:21:24.556 " src_ver="1">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="ImageEnhance" ns="ImageFix" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="TIF"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="ImageFix" id="2" ver="3" modder="admin.1" dt="12/03/13 17:33:30.556 " src_ver="2">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="ImageEnhance" ns="ImageFix" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v=".TIF"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="ImageFix" id="2" ver="4" modder="admin.1" dt="12/03/13 17:38:37.916 " src_ver="3">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="ImageEnhance" ns="ImageFix" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="tio"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="ImageFix" id="2" ver="5" modder="admin.1" dt="12/03/13 17:42:37.791 " src_ver="4" qi="">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="ImageEnhance" ns="ImageFix" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tio" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="ImageFix" id="2" ver="6" modder="admin.1" dt="12/09/13 18:06:44.141 " src_ver="5" qi="">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="rrCompare" ns="rrunner" qi="">
+					<p name="object1" v="@P.RecogStatus"/>
+					<p name="object2" v="0"/>
+				</a>
+				<a name="ImageEnhance" ns="ImageFix" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tio" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="ImageFix" id="2" ver="7" modder="admin.1" dt="12/10/13 18:48:26.170 " src_ver="6" qi="">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="ImageEnhance" ns="ImageFix" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tio" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="ImageFix" id="2" ver="8" modder="admin.1" dt="01/08/14 21:07:47.917 " src_ver="7" qi="">
+		<rule name="ImageFix Load Settings" id="1">
+			<func name="Read INI settings">
+				<a name="LoadSettings" ns="ImageFix">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Enhance Image" id="2">
+			<func name="ImageFix: Other Function 1">
+				<a name="ImageEnhance" ns="ImageFix" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tio" name="StrParam"/>
+				</a>
+				<a name="C2BW_Convert" ns="ColorToBW" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="tic"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

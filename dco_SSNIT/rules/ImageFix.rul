@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="ImageFix" id="2" ver="9" modder="admin.1" dt="01/08/14 21:14:34.839 " src_ver="8" qi="">
+	<rule name="ImageFix Load Settings" id="1">
+		<func name="Read INI settings">
+			<a name="LoadSettings" ns="ImageFix">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(imagefix)" name="sFilePath"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Enhance Image" id="2">
+		<func name="ImageFix: Other Function 1">
+			<a name="C2BW_Convert" ns="ColorToBW" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="tic" name="sParam"/>
+			</a>
+			<a name="ImageEnhance" ns="ImageFix" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="tio" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

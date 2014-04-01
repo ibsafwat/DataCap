@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="VScan" id="1" ver="2" modder="admin.1" dt="01/23/14 22:59:01.33 " src_ver="1">
+	<rule name="VScan" id="1">
+		<func name="VScan: Batch Function 1">
+			<a name="SetSourceDirectory" ns="vscan">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(vscanimagedir)" name="SmartParam"/>
+			</a>
+			<a name="SetMaxImageFiles" ns="vscan" qi="">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="10"/>
+			</a>
+			<a name="Scan" ns="vscan">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

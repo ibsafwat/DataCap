@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset name="CreateDocs" id="5" ver="1">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="2" modder="admin.1" dt="12/04/13 18:32:19.250 " src_ver="1" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeDocToPDF" ns="OCR_s">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="3" modder="admin.1" dt="01/23/14 22:10:31.733 " src_ver="2" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeDocToPDF" ns="OCR_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="4" modder="admin.1" dt="01/23/14 22:26:48.783 " src_ver="3" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="5" modder="admin.1" dt="01/23/14 22:27:28.705 " src_ver="4" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="6" modder="admin.1" dt="02/07/14 18:02:08.604 " src_ver="5" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v=","/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="7" modder="admin.1" dt="02/09/14 20:23:16.27 " src_ver="6" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="8" modder="admin.2" dt="02/25/14 13:39:45.368 " src_ver="7" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5" qi="">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="9" modder="admin.1" dt="03/02/14 23:36:14.296 " src_ver="8" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5" qi="">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Barcode" id="6">
+			<func name="Function1">
+				<a name="GetBarcodeBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="10" modder="admin.1" dt="03/03/14 01:02:11.250 " src_ver="9" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetDataMatrixCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="GetAllBarcodesBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5" qi="">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Barcode" id="6">
+			<func name="Function1">
+				<a name="GetBarcodeBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="11" modder="admin.1" dt="03/03/14 01:33:07.123 " src_ver="10" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetDataMatrixCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="GetAllBarcodesBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5" qi="">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="12" modder="admin.1" dt="03/03/14 02:25:53.299 " src_ver="11" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5" qi="">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="CreateDocs" id="5" ver="13" modder="admin.1" dt="03/03/14 02:44:39.775 " src_ver="12" qi="">
+		<rule name="Create Docs" id="1">
+			<func name="CreateDocs: Document Function 1">
+				<a name="CreateDocuments" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2">
+			<func name="CreateDocs: Page Function 1">
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Backup" id="3">
+			<func name="Recognize Document to PDF" qi="">
+				<a name="RecognizeToPDF" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create BarcodeList" id="4">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+				<a name="SaveBarcodeList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docID" type="String" v="@BATCHID"/>
+					<p name="barcodeList" type="String" v="@P.GetBarCodeList+,+@P.Top0+,+@P.Top1+,+@P.Top2+,+@P.Top3+,+@P.Top4+,+@P.Top5+,+@P.Top6+,+@P.Top7+,+@P.Top8+,+@P.Top9+,+@P.Top10"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Barcode values" id="5" qi="">
+			<func name="Function1">
+				<a name="setBarcodeValueFromList" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="batchID" type="String" v="@BATCHID"/>
+				</a>
+				<a name="CreateFields" ns="DCO">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

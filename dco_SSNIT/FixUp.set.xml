@@ -1,0 +1,59 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?>
+<S lang="en-US">
+  <P tip="" title="Batch processing" n="BatchProcessing">
+    <V n="TaskDCOFile" label="Page file" tip="Enter the name of the page file that will be created during this task. &#xA;Use taskname.xml to automatically assign the name of the task to the page file." type="text">taskname.xml</V>
+    <V n="CreateDir" label="Create batch directory" tip="Select this checkbox when this task is a batch creation task and &#xA;you want Taskmaster to automatically create a batch folder for each new batch." type="checkbox">0</V>
+    <V n="CreateDoc" label="Create document node" tip="Select this check box when the application's Document Hierarchy does not contain &#xA;a document level object and you want Taskmaster to automatically create &#xA;the document node for the scan task." type="checkbox">0</V>
+    <P tip="" title="Navigation" n="Navigation">
+      <V n="DOF" label="Validation statuses" tip="Enter the three different status values that the application assigns to the current page after validation in a comma-separated list:&#xA;- The first value is assigned when validation passes (Done). &#xA;- The second value is assigned when the operator overrides a validation error (Override). &#xA;- The third value is assigned when validation fails and override is not used (Fail).&#xA;For example, 0,2,1 specifies Done status = 0; Override status = 2; Fail status = 1." type="text">0,2,1</V>
+    </P>
+  </P>
+  <P tip="" title="Rulerunner settings" n="Rulerunner">
+    <V n="TProfile" label="Main task profile" tip="Enter the name of the task profile to run when users click the Submit button." type="text">
+    </V>
+    <V n="AltTProfile" label="Additional task profile or profiles" tip="Enter the names of the additional task profiles that can be run from the verify interface &#xA;in a comma-separated list. Instead of the default Verify button, &#xA;the interface displays a button for each task profile that is listed." type="text">
+    </V>
+    <V n="PreTProfile" label="Data preparation task profile" tip="Enter the name of the task profile that the application runs to modify, convert, prepare, &#xA;copy, or move data before the data and page are displayed by the main task." type="text">
+    </V>
+    <P tip="" title="Rulerunner service log settings" n="RRSLog">
+      <V n="ServiceLog" label="Rulerunner service log" tip="Enter the setting that defines whether to create a Rulerunner service (RRS) log file and &#xA;how much detail the task should write to the log file. The log file name includes the task profile &#xA;name (taskname_rrs.log). Enter one of the following values: &#xA;0  or 1 - No log file is created.&#xA;2 - Log file with action logging is created, but no action parameters are logged.&#xA;3 or 4 - Log file with action logging is created, and action parameters are logged.&#xA;5 or higher - Log file with action logging is created and complete DCO navigation is logged.&#xA;In most situations, a setting of 3 provides enough information to help you debug rule-related problems." type="text">3</V>
+      <V n="BatchLog" label="Batch log" tip="Leave this field blank." type="text">
+      </V>
+      <V n="ActionLogLevel" label="Action log level" tip="Leave this field blank." type="text">
+      </V>
+      <V n="LogReflush" label="Flush buffer" tip="Specify when processing messages are written to the Rulerunner log file.&#xA;Leave this check box cleared if you want all messages saved to the buffer and written &#xA;to the log at the same time, which has less impact on performance.&#xA;Select this check box if you want to write each message to the log, and to clear the buffer &#xA;after each write operation. This method ensures that all existing messages are captured but reduces performance. Select this option only if you are troubleshooting." type="checkbox">0</V>
+    </P>
+  </P>
+  <P tip="" title="Scan or Disk Scan (VScan)" n="ScanVScan">
+    <V n="StartPanel" label="Show the Start Batch Panel" tip="Select this check box to display the Start Batch Panel when a new batch is started." type="checkbox">0</V>
+    <V n="HoldEnabled" label="Allow hold during scanning" tip="Select this check box to display the Hold button on the web page during scanning. &#xA;When the Hold button is visible, users can place a batch on hold before scanning is complete." type="checkbox">1</V>
+  </P>
+  <P tip="" title="DotScan" n="DotScan">
+    <V n="Panel" label="User Interface Panel (ISISScan, TWAINScan, VScan, or Default)" tip="Enter the user interface that DotScan displays to the user (ISISScan, TWAINScan, VScan, or Defaultdefines)." type="text">Default</V>
+    <G n="Fixup-Document-Statuses" title="Document statuses for Fixup" tip="Specify Key-Value pairs to associate numeric document statuses with meaningful status names.">
+      <V n="OK" label="Status for" tip="Assigned status for OK objects" hotkey="D" type="text">0</V>
+      <V n="Problem" label="Status for" tip="Assigned status for Problem object" hotkey="E" type="text">1</V>
+    </G>
+    <G n="Fixup-Page-Statuses" title="Page statuses for Fixup" tip="Specify Key-Value pairs to associate numeric page statuses with meaningful status names.">
+      <V n="OK" label="Status for" tip="Assigned status for OK objects" hotkey="" type="text">0</V>
+      <V n="Problem" label="Status for" tip="Assigned status for Problem object" hotkey="" type="text">1</V>
+      <V n="Updated" label="Status for" tip="Assigned status for Problem object" hotkey="" type="text">49</V>
+    </G>
+    <G n="Fixup-Page-FileSuffixes" title="Suffixes of filetypes to manage" tip="Specify the filetypes to be deleted or moved together with the image file. ">
+      <V n="XML" label="Suffix for " tip="Suffix for XML type" type="text">XML</V>
+      <V n="TIO" label="Suffix for" tip="Suffix for TIO type" type="text">TIO</V>
+    </G>
+    <V n="TreePageLabel" label="What to display in the tree node labels for pages" tip="PageType or Sequence" type="text">PageType</V>
+    <V n="CheckStructure" label="Enforce batch structure" tip="Specify whether the batch must have the correct structure before advancing." type="checkbox">0</V>
+    <V n="CanDelete" label="Delete image files" tip="When selected, the Delete button removes the image file completely.  &#xA;When cleared, the Delete button marks the image file as deleted." type="checkbox">1</V>
+    <V n="ExpandAllDocs" label="Expand all documents in tree" tip="Specify whether the full batch tree is always expanded whenever it is displayed." type="checkbox">1</V>
+    <V n="MoveAcrossDocs" label="Allow pages to move between documents" tip="Select this if you want to allow the operator to move pages out of one document and into another." type="checkbox">1</V>
+    <V n="ShowFingerprintClass" label="Display fingerprint class" tip="Select to display the Fingerprint Class dropdown control." type="checkbox">0</V>
+    <V n="BCSepType" label="Barcode type " tip="Specify the type of barcode used on the document separation sheet." type="text">
+    </V>
+    <V n="BCSepValue" label="Barcode value " tip="&gt;Barcode value that marks a new document" type="text">
+    </V>
+    <V n="ScannerSettingsFile" label="Scanner settings file for this task" tip="File path containing scanner settings to load when task starts, if any" type="text">
+    </V>
+  </P>
+</S>

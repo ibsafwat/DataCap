@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="12" name="Export To P8 ruleset" ver="64" modder="admin.1" qi="" dt="03/04/14 05:01:58.467 " src_ver="63">
+	<rule name="Upload Supporting Doc" id="3" qi="">
+		<func name="Function1">
+			<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+				<p name="docType" type="String" v="@Type"/>
+				<p name="batchID" type="String" v="@BATCHID"/>
+				<p name="ID" type="String" v="@D.id"/>
+				<p name="pageID" type="String" v="@ID"/>
+				<p name="name" type="String" v="@D.id"/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a name="rr_AbortBatch" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Upload Doc" id="4">
+		<func name="Function1" qi="">
+			<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+				<p name="docType" type="String" v="@Type"/>
+				<p name="batchID" type="String" v="@BATCHID"/>
+				<p name="ID" type="String" v="@ID"/>
+				<p name="pageID" type="String" v="@ID"/>
+				<p name="name" type="String" v="@ID"/>
+			</a>
+		</func>
+		<func name="fFunction2">
+			<a name="rr_AbortBatch" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Upload ThumbPrint" id="5">
+		<func name="Function1" qi="">
+			<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+				<p name="docType" type="String" v="@D.type"/>
+				<p name="batchID" type="String" v="@BATCHID"/>
+				<p name="ID" type="String" v="@D.id"/>
+				<p name="pageID" type="String" v="@D.id"/>
+				<p name="name" type="String" v="@D.id"/>
+			</a>
+			<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+				<p name="docType" type="String" v="@D.type"/>
+				<p name="batchID" type="String" v="@BATCHID"/>
+				<p name="ID" type="String" v="@D.id"/>
+				<p name="pageID" type="String" v="@D.id"/>
+				<p name="name" type="String" v="@D.id"/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a name="rr_AbortBatch" ns="rrunner" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="Validate" id="6" ver="14" modder="admin.1" dt="03/26/14 19:38:28.535 " src_ver="13" qi="">
+	<rule name="Validate Page" id="1" qi="">
+		<func name="Validate: Page Function 1 ">
+			<a name="Status_Preserve_OFF" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="IsDate" id="2">
+		<func name="Function1">
+			<a name="ValidateDate" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions"/>
+			<a name="IsThisFieldFilled" ns="Validations" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="IsFieldFilled" id="3">
+		<func name="Function1">
+			<a name="SetIsOverrideable" ns="Validations" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="False" name="StrParam"/>
+			</a>
+			<a name="IsThisFieldFilled" ns="Validations">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="IsFieldLengthMax" ns="Validations">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="64" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="IsOMRChecked" id="4">
+		<func name="Function1">
+			<a name="IsMinOMRChecked" ns="Validations" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="FieldLength64" id="5" qi="">
+		<func name="Function1">
+			<a name="IsFieldLengthMax" ns="Validations">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="64" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

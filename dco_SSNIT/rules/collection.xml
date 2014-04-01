@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsapp name="SSNIT">
+	<rsc>
+		<ruleset name="VScan" id="1"/>
+		<ruleset name="ImageFix" id="2"/>
+		<ruleset name="PageID" id="3"/>
+		<ruleset name="CreateDocs" id="5"/>
+		<ruleset name="Recognize" id="4"/>
+		<ruleset name="Validate" id="6"/>
+		<ruleset name="Export" id="7"/>
+		<ruleset name="FingerprintAdd" id="8"/>
+		<ruleset name="Clean" id="9"/>
+		<ruleset name="Routing" id="10"/>
+		<ruleset name="Document Integrity" id="11"/>
+		<ruleset id="12" name="Export To P8 ruleset"/>
+		<ruleset id="13" name="FindFingerprint"/>
+		<ruleset id="14" name="ExportXML"/>
+		<ruleset id="15" name="CoverToPDF"/>
+		<ruleset id="16" name="Export Heitech"/>
+		<ruleset id="17" name="ExportXML Scanned Docs"/>
+		<ruleset id="18" name="Export SilverLake"/>
+	</rsc>
+	<tps>
+		<tprofile name="VScan">
+			<ruleset id="1"/>
+		</tprofile>
+		<tprofile name="PageID">
+			<ruleset id="3"/>
+			<ruleset id="13"/>
+			<ruleset id="2"/>
+		</tprofile>
+		<tprofile name="Profiler">
+			<ruleset id="5"/>
+			<ruleset id="11"/>
+			<ruleset id="4"/>
+			<ruleset id="9"/>
+			<ruleset id="6"/>
+			<ruleset id="10"/>
+		</tprofile>
+		<tprofile name="Verify">
+			<ruleset id="6"/>
+		</tprofile>
+		<tprofile name="Export">
+			<ruleset id="7"/>
+			<ruleset id="15"/>
+			<ruleset id="14"/>
+			<ruleset id="17"/>
+			<ruleset id="12"/>
+			<ruleset id="16"/>
+			<ruleset id="18"/>
+		</tprofile>
+		<tprofile name="FingerprintAdd">
+			<ruleset id="8"/>
+		</tprofile>
+		<tprofile name="ImageFix">
+			<ruleset id="2"/>
+		</tprofile>
+	</tps>
+</rsapp>

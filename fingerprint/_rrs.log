@@ -1,0 +1,17 @@
+Log started Mon Mar 24 21:04:25 2014
+------------------------------------
+21:04:25.454 (0)	Error (385875989=hex:17000015). In CIState::SystemsCheck: ERROR: task profile was not loaded from (collection.xml) in "\\10.1.1.14\Datacap\SSNIT\dco_SSNIT\rules\"; refer to state.XML log for more information [api source:]
+
+21:04:25.454 (0)	EXCEPTION: code="385875989" msg="ERROR: task profile was not loaded from (collection.xml) in "\\10.1.1.14\Datacap\SSNIT\dco_SSNIT\rules\"; refer to state.XML log for more information" loc="CIState::SystemsCheck" API=""
+21:04:25.454 (0)	CIMainAlgorithm::Execute::finalize_after_process:
+21:04:25.454 (0)	execute statement On Process End
+21:04:25.454 (0)	   nothing to exec
+21:04:25.454 (0)	/execute statement On Process End
+21:04:25.454 (0)	CIMainAlgorithm::Execute::finalize_after_process:SaveDCO:
+21:04:25.454 (0)	unload script [m0x="5550ad4"]
+21:04:25.454 (0)	   skip unload: not even inited
+21:04:25.454 (0)	/unload
+21:04:25.454 (0)	unload COM m0x="5550a84">
+21:04:25.454 (0)	/unload
+21:04:25.454 (0)	c:\datacap\RRS\Logs\wrrs
+21:04:25.454 (0)	end log to batch

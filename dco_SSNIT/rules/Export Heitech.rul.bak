@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="16" name="Export Heitech" ver="1" modder="admin.1">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="ID" type="String"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="True"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="2" modder="admin.1" dt="02/12/14 02:20:48.496 " src_ver="1">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="3" modder="admin.1" dt="02/12/14 20:31:40.444 " src_ver="2" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="4" modder="admin.1" dt="02/12/14 21:05:33.147 " src_ver="3" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="5" modder="admin.1" dt="02/13/14 01:55:06.959 " src_ver="4" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="6" modder="admin.1" dt="02/13/14 02:57:09.42 " src_ver="5" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="7" modder="admin.1" dt="02/13/14 18:16:20.604 " src_ver="6" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+					<p name="AppRefNo" type="String" v="@P. GetBarCode1"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="8" modder="admin.1" dt="02/13/14 22:55:37.124 " src_ver="7" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+					<p name="AppRefNo" type="String" v="@D. GetBarCode1"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="9" modder="admin.1" dt="02/13/14 23:01:34.620 " src_ver="8" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+					<p name="AppRefNo" type="String" v="@Document_Separator. GetBarCode1"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="10" modder="admin.1" dt="02/13/14 23:08:06.139 " src_ver="9" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+					<p name="AppRefNo" type="String" v="@D.Document_Separator. GetBarCode1"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="11" modder="admin.1" dt="02/13/14 23:11:06.733 " src_ver="10" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+					<p name="AppRefNo" type="String" v="Test"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="12" modder="admin.1" dt="02/13/14 23:23:01.577 " src_ver="11" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+					<p name="AppRefNo" type="String" v="@P.GetBarCode1"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="Export Heitech" ver="13" modder="admin.1" dt="02/13/14 23:28:09.34 " src_ver="12" qi="">
+		<rule name="Export XML Heitech" id="1" qi="">
+			<func name="Function1">
+				<a name="UploadDocHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Export XML DocList Heitech" id="2">
+			<func name="Function1">
+				<a name="UploadDocListHeitech" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="AppRefNo" type="String" v="@P.GetBarCode1"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

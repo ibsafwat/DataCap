@@ -1,0 +1,71 @@
+<ruleset name="Export" id="7" ver="1">
+	<rule name="Export Page Fields" id="1">
+		<func name="Export: Page Function 1">
+			<a name="ExportAllFields" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set Export Params" id="2">
+		<func name="Export: Batch Function 1">
+			<a name="SetExportPath" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+			</a>
+			<a name="SetFileName" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@BatchID" name="StrParam"/>
+			</a>
+			<a name="SetExtensionName" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="txt" name="StrParam"/>
+			</a>
+			<a name="NewLine" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="Text" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="*****************" name="StrParam"/>
+			</a>
+			<a name="NewLine" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="Text" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Export for batch #" name="StrParam"/>
+			</a>
+			<a name="BPilot" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BatchID" name="StrParam"/>
+			</a>
+			<a name="SetElementSeparator" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="," name="StrParam"/>
+			</a>
+			<a name="GetDATE" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="*" name="StrParam"/>
+			</a>
+			<a name="GetTime" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="*" name="StrParam"/>
+			</a>
+			<a name="NewLine" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

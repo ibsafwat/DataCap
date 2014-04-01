@@ -1,0 +1,3399 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="14" name="ExportXML" ver="91" modder="admin.1" qi="" dt="03/31/14 21:13:00.463 " src_ver="90">
+	<rule name="Open XML File" id="1">
+		<func name="Open XML">
+			<a name="xml_SetExportPath" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+			</a>
+			<a name="xml_SetFileName" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@ID" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M1 XML" id="2">
+		<func name="Export XML">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,@P.ModuleType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@P.CIF" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@P.AccountType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@P.ApplicationReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@P.SSNO" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@P.DocumentCompletionDate" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@P.Surname_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@P.FirstName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@P.OtherName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@P.DateOfBirth_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ReferenceNumber,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaidenSurname,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaidenSurname,@P\MaidenSurname" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaidenFirstName,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaidenFirstName,@P\MaidenFirstName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaidenOtherNames,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaidenOtherNames,@P\MaidenOtherNames" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaritalStatus,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaritalStatus,@P\MaritalStatus" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,@P\Gender" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryOfBirth,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryOfBirth,@P\CountryOfBirth" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nationality,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nationality,@P\Nationality" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,@P\City" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="District,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="District,@P\District" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,@P\Region" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NIA,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NIA,@P\NIA" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NHIS,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NHIS,@P\NHIS" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SecondaryEvidence,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SecondaryEvidence,@P\SecondaryEvidence" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SecondaryEvidenceID,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SecondaryEvidenceID,@P\SecondaryEvidenceID" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RegistrationType,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RegistrationType,@P\RegistrationType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution,@P\Institution" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BasicIncome,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BasicIncome,@P\BasicIncome" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfIncome,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfIncome,@P\NatureOfIncome" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Occupation,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Occupation,@P\Occupation" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfOccupation,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfOccupation,@P\NatureOfOccupation" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="TIN,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="TIN,@P\TIN" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWork,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWork,@P\PlaceOfWork" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FrequencyOfPayment,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FrequencyOfPayment,@P\FrequencyOfPayment" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivity,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivity,@P\EconomicActivity" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherType,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherType,@P\OtherType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivityOther,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivityOther,@P\EconomicActivityOther" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfContribution,SS_M1" name="Strparam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M1_P2 XML" id="4" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherSurname,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherSurname,@P\FatherSurname" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherFirstName,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherFirstName,@P\FatherFirstName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherOtherNames,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherOtherNames,@P\FatherOtherNames" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherSurname,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherSurname,@P\MotherSurname" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherFirstName,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherFirstName,@P\MotherFirstName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherOtherNames,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherOtherNames,@P\MotherOtherNames" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CardCollectionBranch,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CardCollectionBranch,@P\CardCollectionBranch" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNITPortalID,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNITPortalID,@P\SSNITPortalID" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,@P\DateOfRegistration_Day+/+@P\DateOfRegistration_Month+/+@P\DateOfRegistration_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,@P\NameOfWitness" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,@P\NameOfRegisteringOfficer" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,@P\Date_Day+/+@P\Date_Month+/+@P\Date_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@P\BranchName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@P\BranchCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryCode,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryCode,@P\CountryCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DistrictCode,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DistrictCode,@P\DistrictCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OccupationalCode,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OccupationalCode,@P\OccupationalCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWorkCode,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWorkCode,@P\PlaceOfWorkCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="StudentInstitution,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="StudentInstitution,@P\StudentInstitution" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ERNumber,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ERNumber,@P\ERNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivityCode,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivityCode,@P\EconomicActivityCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FingersAmputated,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FingersAmputated,@P\FingersAmputated" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LeftHand,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LeftHand,@P\LeftHand" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RightHand,SS_M1" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RightHand,@P\RightHand" name="Strparam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M2 XML" id="16" qi="">
+		<func name="Export XML">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,@P.ModuleType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@P.CIF" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@P.AccountType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@P.ApplicationReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@P.SSNO" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@P.DocumentCompletionDate" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@P.Surname_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@P.FirstName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@P.OtherName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CareOf,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@P.DateOfBirth_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CareOf,@P\CareOf" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution_line1,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution_line1,@P\Institution_line1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution_line2,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution_line2,@P\Institution_line2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalType,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalType,@P\PostalType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalNumber,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalNumber,@P\PostalNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BoxLocation,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BoxLocation,@P\BoxLocation" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,@P\City" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,@P\Region" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MobilePhoneNumber,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MobilePhoneNumber,@P\MobilePhoneNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LandlinePhoneNumber,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LandlinePhoneNumber,@P\LandlinePhoneNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EmailAddress,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EmailAddress,@P\EmailAddress" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ChannelOfCommunication,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ChannelOfCommunication,@P\ChannelOfCommunication" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseNumber,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseNumber,@P\ResidentialHouseNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseName,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseName,@P\ResidentialHouseName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialStreetName,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialStreetName,@P\ResidentialStreetName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialSuburb,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialSuburb,@P\ResidentialSuburb" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialCity,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialCity,@P\ResidentialCity" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialRegion,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialRegion,@P\ResidentialRegion" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line1,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line1,@P\ResidentialLandMark_line1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line2,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line2,@P\ResidentialLandMark_line2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,@P\DateOfRegistration_Day+/+@P\DateOfRegistration_Month+/+@P\DateOfRegistratin_Year" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M2_P2 XML" id="17" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,@P\NameOfWitness" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,@P\NameOfRegisteringOfficer" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,@P\Date_Day+/+@P\Date_Month+/+@P\Date_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@P\BranchName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,SS_M2" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@P\BranchCode" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M3 XML" id="5">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,@P.ModuleType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@P.CIF" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@P.AccountType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@P.ApplicationReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@P.SSNO" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@P.DocumentCompletionDate" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@P.Surname_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@P.FirstName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@P.OtherName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@P.DateOfBirth_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber,@P\SocialSecurityNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nomination,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nomination,@P\Nomination" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FamilySystemOfInheritance,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FamilySystemOfInheritance,@P\FamilySystemOfInheritance" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySurname_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySurname_1,@P\BeneficiarySurname_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryFirstName_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryFirstName_1,@P\BeneficiaryFirstName_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryOtherNames_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryOtherNames_1,@P\BeneficiaryOtherNames_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryDateOfBirth_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryDateOfBirth_1,@P\BeneficiaryDateOfBirth_1_Day+/+@P\BeneficiaryDateOfBirth_1_Month+/+@P\BeneficiaryDateOfBirth_1_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryGender_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryGender_1,@P\BeneficiaryGender_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRelationship_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRelationship_1,@P\BeneficiaryRelationship_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryBenefitsAllocated_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryBenefitsAllocated_1,@P\BeneficiaryBenefitsAllocated_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDType_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDType_1,@P\BeneficiaryIDType_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDNumber_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDNumber_1,@P\BeneficiaryIDNumber_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseNumber_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseNumber_1,@P\BeneficiaryHouseNumber_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseName_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseName_1,@P\BeneficiaryHouseName_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryStreetName_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryStreetName_1,@P\BeneficiaryStreetName_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySuburb_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySuburb_1,@P\BeneficiarySuburb_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryCity_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryCity_1,@P\BeneficiaryCity_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRegion_1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRegion_1,@P\BeneficiaryRegion_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_1_line1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_1_line1,@P\BeneficiaryLandmark_1_line1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_1_line2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_1_line2,@P\BeneficiaryLandmark_1_line2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySurname_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySurname_2,@P\BeneficiarySurname_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryFirstName_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryFirstName_2,@P\BeneficiaryFirstName_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryOtherNames_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryOtherNames_2,@P\BeneficiaryOtherNames_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryDateOfBirth_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryDateOfBirth_2,@P\BeneficiaryDateOfBirth_2_Day+/+@P\BeneficiaryDateOfBirth_2_Month+/+@P\BeneficiaryDateOfBirth_2_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryGender_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryGender_2,@P\BeneficiaryGender_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRelationship_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRelationship_2,@P\BeneficiaryRelationship_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryBenefitsAllocated_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryBenefitsAllocated_2,@P\BeneficiaryBenefitsAllocated_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDType_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDType_2,@P\BeneficiaryIDType_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDNumber_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDNumber_2,@P\BeneficiaryIDNumber_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseNumber_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseNumber_2,@P\BeneficiaryHouseNumber_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseName_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseName_2,@P\BeneficiaryHouseName_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryStreetName_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryStreetName_2,@P\BeneficiaryStreetName_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySuburb_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySuburb_2,@P\BeneficiarySuburb_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryCity_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryCity_2,@P\BeneficiaryCity_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRegion_2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRegion_2,@P\BeneficiaryRegion_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_2_line1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_2_line1,@P\BeneficiaryLandmark_2_line1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_2_line2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_2_line2,@P\BeneficiaryLandmark_2_line2" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M3_P2 XML" id="6" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySurname_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySurname_3,@P\BeneficiarySurname_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryFirstName_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryFirstName_3,@P\BeneficiaryFirstName_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryOtherNames_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryOtherNames_3,@P\BeneficiaryOtherNames_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryDateOfBirth_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryDateOfBirth_3,@P\BeneficiaryDateOfBirth_3_Day+/+@P\BeneficiaryDateOfBirth_3_Month+/+@P\BeneficiaryDateOfBirth_3_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryGender_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryGender_3,@P\BeneficiaryGender_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRelationship_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRelationship_3,@P\BeneficiaryRelationship_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryBenefitsAllocated_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryBenefitsAllocated_3,@P\BeneficiaryBenefitsAllocated_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDType_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDType_3,@P\BeneficiaryIDType_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDNumber_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryIDNumber_3,@P\BeneficiaryIDNumber_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseNumber_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseNumber_3,@P\BeneficiaryHouseNumber_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseName_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryHouseName_3,@P\BeneficiaryHouseName_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryStreetName_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryStreetName_3,@P\BeneficiaryStreetName_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySuburb_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiarySuburb_3,@P\BeneficiarySuburb_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryCity_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryCity_3,@P\BeneficiaryCity_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRegion_3,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryRegion_3,@P\BeneficiaryRegion_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_3_line1,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_3_line1,@P\BeneficiaryLandmark_3_line1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_3_line2,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BeneficiaryLandmark_3_line2,@P\BeneficiaryLandmark_3_line2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfCompletion,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfCompletion,@P\DateOfCompletion_Day+/+@P\DateOfCompletion_Month+/+@P\DateOfCompletion_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,@P\NameOfWitness" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,@P\NameOfRegisteringOfficer" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,@P\Date_Day+/+@P\Date_Month+/+@P\Date_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@P\BranchName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,SS_M3" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@P\BranchCode" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M4 XML" id="7" qi="">
+		<func name="Export XML">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,@P.ModuleType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@P.CIF" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@P.AccountType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@P.ApplicationReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@P.SSNO" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@P.DocumentCompletionDate" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@P.Surname_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@P.FirstName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@P.OtherName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@P.DateOfBirth_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_1,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_1,@P\SocialSecurityNumber_1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_2,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_2,@P\SocialSecurityNumber_2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_3,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_3,@P\SocialSecurityNumber_3" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_4,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber_4,@P\SocialSecurityNumber_4" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,@P\Gender" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaritalStatus,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaritalStatus,@P\MaritalStatus" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NIA,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NIA,@P\NIA" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NHIS,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NHIS,@P\NHIS" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nationality,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nationality,@P\Nationality" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryOfBirth,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryOfBirth,@P\CountryOfBirth" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,@P\City" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="District,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="District,@P\District" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,@P\Region" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWork,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWork,@P\PlaceOfWork" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Occupation,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Occupation,@P\Occupation" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfOccupation,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfOccupation,@P\NatureOfOccupation" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="TIN,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="TIN,@P\TIN" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfIncome,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NatureOfIncome,@P\NatureOfIncome" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FrequencyOfPayment,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FrequencyOfPayment,@P\FrequencyOfPayment" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivity,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivity,@P\EconomicActivity" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CareOf,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CareOf,@P\CareOf" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution,@P\Institution" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalType,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalType,@P\PostalType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalNumber,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalNumber,@P\PostalNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BoxLocation,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BoxLocation,@P\BoxLocation" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingCity,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingCity,@P\MailingCity" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingRegion,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingRegion,@P\MailingRegion" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MobilePhoneNumber,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MobilePhoneNumber,@P\MobilePhoneNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LandlinePhoneNumber,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LandlinePhoneNumber,@P\LandlinePhoneNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EmailAddress,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EmailAddress,@P\EmailAddress" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ChannelOfCommunication,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ChannelOfCommunication,@P\ChannelOfCommunication" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M4_P2 XML" id="8" qi="">
+		<func name="Export XML">
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseNumber,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseNumber,@P\ResidentialHouseNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseName,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseName,@P\ResidentialHouseName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialStreetName,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialStreetName,@P\ResidentialStreetName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialSuburb,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialSuburb,@P\ResidentialSuburb" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialCity,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialCity,@P\ResidentialCity" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialRegion,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialRegion,@P\ResidentialRegion" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line1,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line1,@P\ResidentialLandMark_line1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line2,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line2,@P\ResidentialLandMark_line2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CardCollectionBranch,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CardCollectionBranch,@P\CardCollectionBranch" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,@P\DateOfRegistration_Day+/+@P\DateOfRegistration_Month+/+@P\DateOfRegistration_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,@P\NameOfWitness" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,@P\NameOfRegisteringOfficer" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,@P\Date_Day+/+@P\Date_Month+/+@P\Date_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@P\BranchName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@P\BranchCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryCode,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryCode,@P\CountryCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DistrictCode,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DistrictCode,@P\DistrictCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OccupationalCode,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OccupationalCode,@P\OccupationalCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWorkCode,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PlaceOfWorkCode,@P\PlaceOfWorkCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivityCode,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EconomicActivityCode,@P\EconomicActivityCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="InstitutionCode,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="InstitutionCode,@P\InstitutionCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ERNumber,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ERNumber,@P\ERNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FingersAmputated,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FingersAmputated,@P\FingersAmputated" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LeftHand,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LeftHand,@P\LeftHand" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RightHand,SS_M4" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RightHand,@P\RightHand" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-M5 XML" id="9" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,@P.ModuleType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@P.CIF" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@P.AccountType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@P.ApplicationReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@P.SSNO" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@P.DocumentCompletionDate" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@P.Surname_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@P.FirstName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@P.OtherName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@P.DateOfBirth_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber,@P\SocialSecurityNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,@P\Gender" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherSurname,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherSurname,@P\FatherSurname" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherFirstName,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherFirstName,@P\FatherFirstName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherOtherNames,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FatherOtherNames,@P\FatherOtherNames" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherSurname,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherSurname,@P\MotherSurname" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherFirstName,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherFirstName,@P\MotherFirstName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherOtherNames,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MotherOtherNames,@P\MotherOtherNames" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,@P\DateOfRegistration_Day+/+@P\DateOfRegistration_Month+/+@P\DateOfRegistration_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,@P\NameOfRegisteringOfficer" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,@P\Date_Day+/+@P\Date_Month+/+@P\Date_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@P\BranchName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,SS_M5" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@P\BranchCode" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-P1 XML" id="10" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,@P.ModuleType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@P.CIF" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@P.AccountType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@P.ApplicationReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SSNO,@P.SSNO" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@P.DocumentCompletionDate" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@P.Surname_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@P.FirstName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@P.OtherName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@P.DateOfBirth_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SocialSecurityNumber,@P\SocialSecurityNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Gender,@P\Gender" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaritalStatus,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MaritalStatus,@P\MaritalStatus" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NIA,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NIA,@P\NIA" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NHIS,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NHIS,@P\NHIS" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nationality,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Nationality,@P\Nationality" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryOfBirth,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryOfBirth,@P\CountryOfBirth" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="City,@P\City" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="District,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="District,@P\District" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Region,@P\Region" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CareOf,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CareOf,@P\CareOf" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Institution,@P\Institution" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalType,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalType,@P\PostalType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalNumber,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="PostalNumber,@P\PostalNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BoxLocation,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BoxLocation,@P\BoxLocation" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingCity,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingCity,@P\MailingCity" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingRegion,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MailingRegion,@P\MailingRegion" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MobilePhoneNumber,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MobilePhoneNumber,@P\MobilePhoneNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LandlinePhoneNumber,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LandlinePhoneNumber,@P\LandlinePhoneNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EmailAddress,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="EmailAddress,@P\EmailAddress" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ChannelOfCommunication,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ChannelOfCommunication,@P\ChannelOfCommunication" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseNumber,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseNumber,@P\ResidentialHouseNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseName,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialHouseName,@P\ResidentialHouseName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialStreetName,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialStreetName,@P\ResidentialStreetName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialSuburb,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialSuburb,@P\ResidentialSuburb" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialCity,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialCity,@P\ResidentialCity" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialRegion,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialRegion,@P\ResidentialRegion" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line1,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line1,@P\ResidentialLandMark_line1" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line2,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ResidentialLandMark_line2,@P\ResidentialLandMark_line2" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CardCollectionBranch,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CardCollectionBranch,@P\CardCollectionBranch" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-P1_P2 XML" id="11" qi="">
+		<func name="Export XML">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FingersAmputated,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FingersAmputated,@P\FingersAmputated" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LeftHand,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LeftHand,@P\LeftHand" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RightHand,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="RightHand,@P\RightHand" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfRegistration,@P\DateOfRegistration_Day+/+@P\DateOfRegistration_Month+/+@P\DateOfRegistration_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfWitness,@P\NameOfWitness" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="NameOfRegisteringOfficer,@P\NameOfRegisteringOfficer" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date,@P\Date_Day+/+@P\Date_Month+/+@P\Date_Year" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@P\BranchName" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@P\BranchCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryCode,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CountryCode,@P\CountryCode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DistrictCode,SS_P1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DistrictCode,@P\DistrictCode" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-E1 XML" id="18" qi="">
+		<func name="Export XML">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ModuleType,@P.ModuleType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@P.CIF" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@P.AccountType" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ApplicationReferenceNumber,@P.ApplicationReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="SSNITEmployersNumber,SS_E1"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="SSNITEmployersNumber,@P.SSNO"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="MemberReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DocumentCompletionDate,@P.DocumentCompletionDate" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Surname,@P.Surname_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FirstName,@P.FirstName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="OtherNames,@P.OtherName_Barcode" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ReferenceNumber,SS_E1" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ReferenceNumber,@P.MemberReferenceNumber" name="StrParam"/>
+			</a>
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@D.TYPE" name="Strparam"/>
+			</a>
+			<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DateOfBirth,@P.DateOfBirth_Barcode" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export Passport XML" id="12" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Passport,@D.TYPE" name="Strparam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export DriverLicense XML" id="13" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DriverLicense,@D.TYPE" name="Strparam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export BirthCertificate XML" id="14" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BirthCertificate,@D.TYPE" name="Strparam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SS-1D XML" id="15" qi="">
+		<func name="Function1">
+			<a name="xml_NewNode" ns="ExportXML" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_1D,@D.TYPE" name="Strparam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Close XML File" id="3" qi="">
+		<func name="Close XML">
+			<a name="xml_SaveFile" ns="ExportXML">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

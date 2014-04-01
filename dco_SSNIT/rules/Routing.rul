@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="Routing" id="10" ver="11" modder="admin.1" dt="03/07/14 00:04:58.447 " src_ver="10" qi="">
+	<rule name="Mark Pages to be shown to operator" id="1">
+		<func name="Document Deleted">
+			<a name="rrCompare" ns="rrunner">
+				<p name="object1" v="@D.STATUS"/>
+				<p name="object2" v="128"/>
+			</a>
+			<a name="SetDocStatus" ns="DCO">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="75" name="StrParam"/>
+			</a>
+		</func>
+		<func name="Show All Pages">
+			<a name="ClearErrorMsg" ns="Invoice">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="SetDCOStatus" ns="DCO" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Rule" id="2" qi="">
+		<func name="Skip during Verify Function">
+			<a name="IsTaskName" ns="Invoice">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Verify" name="StrParam"/>
+			</a>
+		</func>
+		<func name="Multi page Function">
+			<a name="IsMultipageDocument" ns="Invoice">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="MergeCCOs_ByType" ns="autodoc" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS1A_P1,Trailing_Page" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page SSM1" id="3">
+		<func name="Multi page Function">
+			<a name="MergeCCOs_ByType" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M1" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page SSM2" id="8" qi="">
+		<func name="Multi page Function">
+			<a name="MergeCCOs_ByType" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M2" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page SSM3" id="4">
+		<func name="Multi page Function">
+			<a name="MergeCCOs_ByType" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M3" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page SSM4" id="5">
+		<func name="Multi page Function">
+			<a name="MergeCCOs_ByType" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M4" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page SSM5" id="6">
+		<func name="Multi page Function">
+			<a name="MergeCCOs_ByType" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_M5" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page SSP1" id="7">
+		<func name="Multi page Function">
+			<a name="MergeCCOs_ByType" ns="autodoc" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_P1" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page SSE1" id="9" qi="">
+		<func name="Function1">
+			<a name="MergeCCOs_ByType" ns="autodoc" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SS_E1" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Level Multi page Document_Separator" id="10" qi="">
+		<func name="Function1">
+			<a name="MergeCCOs_ByType" ns="autodoc">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="Separator"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

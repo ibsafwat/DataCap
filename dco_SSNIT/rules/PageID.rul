@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="PageID" id="3" ver="12" modder="admin.2" dt="02/25/14 13:18:09.510 " src_ver="11" qi="">
+	<rule name="Set Fingerprint Params" id="2">
+		<func name="PageID: Batch Function 1" qi="">
+			<a name="SetFingerprintDir" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+			</a>
+			<a name="SetFingerprintSearchArea" ns="Autodoc" qi="">
+				<p name="matchStart" v="100p"/>
+				<p name="matchEnd" v=""/>
+			</a>
+			<a name="SetProblemValue" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0.7" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Batch Level Rule" id="1" qi="">
+		<func name="Barcoded Separators">
+			<a name="PageIDByBCSep" ns="PageID" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

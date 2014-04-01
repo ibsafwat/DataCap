@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="Recognize" id="4" ver="68" modder="admin.1" dt="03/26/14 19:55:00.244 " src_ver="67" qi="">
+	<rule name="Recognize Page" id="1" qi="">
+		<func name="Recognition: Page Function 1" qi="">
+			<a name="ReadZones" ns="Zones">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Save Snippet Right" id="2">
+		<func name="Function1">
+			<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Save Snippet Left" id="7" qi="">
+		<func name="Function1">
+			<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Recognize Zone ICR " id="3" qi="">
+		<func name="Function1" qi="">
+			<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Get All Barcodes" id="4" qi="">
+		<func name="Barcode">
+			<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="," name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Skip" id="5">
+		<func name="Skip">
+			<a name="SetPageStatus" ns="DCO" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Recognize Zone OMR" id="6" qi="">
+		<func name="Function1" qi="">
+			<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+				<p name="threshold" v="20"/>
+				<p name="background" v="19"/>
+			</a>
+			<a name="rrCompare" ns="rrunner">
+				<p name="object1" v="@VALUE"/>
+				<p name="object2" v="0000"/>
+			</a>
+			<a name="rrSet" ns="rrunner" qi="">
+				<p name="varSource" v=""/>
+				<p name="varTarget" v="@F"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

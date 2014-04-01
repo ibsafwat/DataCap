@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset name="FingerprintAdd" id="8" ver="1">
+		<rule name="FingerprintAdd" id="1">
+			<func name="FingeprintAdd: Other Function 1">
+				<a name="AnalyzeImage" ns="recog_shared">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

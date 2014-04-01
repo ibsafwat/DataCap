@@ -1,0 +1,4540 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="12" name="Export To P8 ruleset" ver="1" modder="admin.1" qi="">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="en_US"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="FNOBS1"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ObjectStore"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="\SSNIT\"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@TYPE"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="tif"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SSNIT_P1"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="2" modder="admin.1" qi="" dt="11/25/13 20:26:38.228 " src_ver="1">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS1A_P1"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="3" modder="admin.1" qi="" dt="11/25/13 20:36:16.25 " src_ver="2">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SS1A_P1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Surename,@Field"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="4" modder="admin.1" qi="" dt="11/25/13 20:40:08.275 " src_ver="3">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SS1A_P1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Surname,@Field"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="5" modder="admin.1" qi="" dt="11/25/13 21:45:09.56 " src_ver="4">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="TravelDocs"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Test,@Field"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="6" modder="admin.1" qi="" dt="11/26/13 19:03:57.57 " src_ver="5">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS1AP1"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Surname,@Field"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="7" modder="admin.1" qi="" dt="11/26/13 19:11:49.635 " src_ver="6">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SSNIT"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="8" modder="admin.1" qi="" dt="11/26/13 19:12:18.166 " src_ver="7">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Surname,@Field1"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="9" modder="admin.1" qi="" dt="12/02/13 20:35:42.515 " src_ver="8">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tif" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetUploadMode" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ParentImage"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="10" modder="admin.1" qi="" dt="12/02/13 22:57:36.339 " src_ver="9">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetUploadMode" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ParentImage" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="11" modder="admin.1" qi="" dt="12/03/13 17:22:17.228 " src_ver="10">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetUploadMode" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ParentImage" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="12" modder="admin.1" qi="" dt="12/03/13 17:40:08.728 " src_ver="11">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="tio"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetUploadMode" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ParentImage" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="13" modder="admin.1" qi="" dt="12/03/13 17:56:59.555 " src_ver="12">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetUploadMode" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ParentImage" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="14" modder="admin.1" qi="" dt="12/04/13 19:49:12.360 " src_ver="13">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field1" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="15" modder="admin.1" qi="" dt="12/04/13 20:09:10.627 " src_ver="14">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://localhost:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@TYPE" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSNIT" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Surname,@Field1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="pdf"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="16" modder="admin.1" qi="" dt="01/23/14 00:47:57.599 " src_ver="15">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SSM1"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="surname,@Surname"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="pdf" name="StrParam"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="17" modder="admin.1" qi="" dt="01/23/14 01:10:33.359 " src_ver="16">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="TIF"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="18" modder="admin.1" qi="" dt="01/23/14 21:34:30.895 " src_ver="17">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="pdf"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="19" modder="admin.1" qi="" dt="01/23/14 22:33:33.33 " src_ver="18">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetFileType" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="TIF"/>
+				</a>
+				<a name="FNP8_Upload" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="20" modder="admin.1" qi="" dt="01/23/14 22:54:00.220 " src_ver="19">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="21" modder="admin.1" qi="" dt="01/23/14 23:08:21.126 " src_ver="20">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,False"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="22" modder="admin.1" qi="" dt="01/24/14 00:59:20.424 " src_ver="21">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="23" modder="admin.1" qi="" dt="01/26/14 19:37:36.121 " src_ver="22">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="\@ReferenceNumber\"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="24" modder="admin.1" qi="" dt="01/26/14 19:45:36.147 " src_ver="23">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="\SSNIT\@ReferenceNumber\"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="25" modder="admin.1" qi="" dt="01/26/14 19:50:22.456 " src_ver="24">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule" id="2">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="26" modder="admin.1" qi="" dt="01/26/14 20:25:03.942 " src_ver="25">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="27" modder="admin.1" qi="" dt="02/02/14 23:28:02.515 " src_ver="26">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="28" modder="admin.1" qi="" dt="02/03/14 00:33:49.873 " src_ver="27">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="29" modder="admin.1" qi="" dt="02/03/14 00:43:37.539 " src_ver="28">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.ID"/>
+					<p name="pageID" type="String" v="@P.ID"/>
+					<p name="name" type="String" v="@P\Surname"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="30" modder="admin.1" qi="" dt="02/03/14 00:58:50.54 " src_ver="29">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.ID"/>
+					<p name="pageID" type="String" v="@P.ID"/>
+					<p name="name" type="String" v="Alfy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="31" modder="admin.1" qi="" dt="02/03/14 01:06:39.664 " src_ver="30">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.ID"/>
+					<p name="pageID" type="String" v="@P.ID"/>
+					<p name="name" type="String" v="@P\Surname"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="32" modder="admin.1" qi="" dt="02/03/14 01:07:09.257 " src_ver="31">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.ID"/>
+					<p name="pageID" type="String" v="@P.ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="33" modder="admin.1" qi="" dt="02/03/14 01:30:42.751 " src_ver="32">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="34" modder="admin.1" qi="" dt="02/03/14 01:31:39.673 " src_ver="33">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="20140203.000004.02"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="35" modder="admin.1" qi="" dt="02/03/14 02:02:10.585 " src_ver="34">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="20140203.000009.02"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="36" modder="admin.1" qi="" dt="02/03/14 02:50:07.367 " src_ver="35">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="37" modder="admin.1" qi="" dt="02/03/14 02:56:56.601 " src_ver="36">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner">
+					<p name="varSource" v="@D.ID"/>
+					<p name="varTarget" v="@P.TempID"/>
+				</a>
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D"/>
+					<p name="pageID" type="String" v="@P.TempID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="38" modder="admin.1" qi="" dt="02/03/14 03:05:31.570 " src_ver="37">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D\ID"/>
+					<p name="pageID" type="String" v="@P.ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="39" modder="admin.1" qi="" dt="02/03/14 03:10:49.804 " src_ver="38">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="40" modder="admin.1" qi="" dt="02/03/14 03:38:38.257 " src_ver="39">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="41" modder="admin.1" qi="" dt="02/03/14 03:54:09.183 " src_ver="40">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.Surname"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="42" modder="admin.1" qi="" dt="02/03/14 04:01:34.292 " src_ver="41">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P\Surname"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="43" modder="admin.1" qi="" dt="02/03/14 04:06:38.527 " src_ver="42">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="SS-M1\Surname"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="44" modder="admin.1" qi="" dt="02/03/14 04:15:14.457 " src_ver="43">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D\SS-M1\Surname"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="45" modder="admin.1" qi="" dt="02/03/14 05:08:48.50 " src_ver="44">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="46" modder="admin.1" qi="" dt="02/03/14 05:35:28.630 " src_ver="45">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1">
+				<a name="UploadFileFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="47" modder="admin.1" qi="" dt="02/03/14 06:02:52.606 " src_ver="46">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="48" modder="admin.1" qi="" dt="02/07/14 20:48:50.979 " src_ver="47">
+		<rule name="Connect to CE rule" id="1">
+			<func name="Logon function">
+				<a name="FNP8_SetURL" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="http://10.0.0.131:9080/wsi/FNCEWS40MTOM" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetLocale" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="en_US" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetObjectID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="FNOBS1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetTargetClassID" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ObjectStore" name="StrParam"/>
+				</a>
+				<a name="FNP8_Login" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="administrator,P@ssw0rd" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDestinationFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\SSNIT\" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="AddDocument rule SSM1" id="2" qi="">
+			<func name="FunctionAddPage function">
+				<a name="FNP8_CreateFolder" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocTitle" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetDocClassId" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SSM1" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="surname,@Surname" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="first_name,@FirstName" name="StrParam"/>
+				</a>
+				<a name="FNP8_SetProperty" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="reference_number,@ReferenceNumber" name="StrParam"/>
+				</a>
+				<a name="FNP8_UploadDir" ns="FileNetP8" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="C:\Datacap\SSNIT\Upload,True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Supporting Doc" id="3">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="49" modder="admin.1" qi="" dt="02/07/14 22:37:58.104 " src_ver="48">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="50" modder="admin.1" qi="" dt="02/08/14 01:49:00.666 " src_ver="49">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi=""/>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="51" modder="admin.1" qi="" dt="02/08/14 01:58:31.323 " src_ver="50">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="52" modder="admin.1" qi="" dt="02/08/14 02:33:19.402 " src_ver="51">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="53" modder="admin.1" qi="" dt="02/13/14 01:55:28.975 " src_ver="52">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="54" modder="admin.1" qi="" dt="02/13/14 01:58:37.538 " src_ver="53">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="AbortOnError" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="55" modder="admin.1" qi="" dt="02/13/14 02:58:18.996 " src_ver="54">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@ID"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@D.id"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="56" modder="admin.1" qi="" dt="03/04/14 04:04:29.192 " src_ver="55">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="57" modder="admin.1" qi="" dt="03/04/14 04:09:43.511 " src_ver="56">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="58" modder="admin.1" qi="" dt="03/04/14 04:12:46.983 " src_ver="57">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="59" modder="admin.1" qi="" dt="03/04/14 04:17:27.50 " src_ver="58">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="60" modder="admin.1" qi="" dt="03/04/14 04:31:00.349 " src_ver="59">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="61" modder="admin.1" qi="" dt="03/04/14 04:35:53.957 " src_ver="60">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="\SS_P1.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="62" modder="admin.1" qi="" dt="03/04/14 04:38:52.187 " src_ver="61">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="\SS-P1.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="Export To P8 ruleset" ver="63" modder="admin.1" qi="" dt="03/04/14 04:55:33.22 " src_ver="62">
+		<rule name="Upload Supporting Doc" id="3" qi="">
+			<func name="Function1">
+				<a name="UploadFileFileNetSupportingDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload Doc" id="4">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetDoc" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+					<p name="docType" type="String" v="@Type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@ID"/>
+					<p name="pageID" type="String" v="@ID"/>
+					<p name="name" type="String" v="@D\ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="fFunction2">
+				<a name="rr_AbortBatch" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Upload ThumbPrint" id="5">
+			<func name="Function1" qi="">
+				<a name="UploadFileNetLeftThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+				<a name="UploadFileNetRightThumb" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+					<p name="docType" type="String" v="@D.type"/>
+					<p name="batchID" type="String" v="@BATCHID"/>
+					<p name="ID" type="String" v="@D.id"/>
+					<p name="pageID" type="String" v="@D.id"/>
+					<p name="name" type="String" v="@P.ApplicationReferenceNumber"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a name="rr_AbortBatch" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset name="PageID" id="3" ver="1">
+		<rule name="PageID" id="1">
+			<func name="PageID: Other Function 1">
+				<a name="AnalyzeImage" ns="recog_shared">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="FindFingerprint" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="true" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="2" modder="admin.1" dt="11/25/13 17:54:52.677 " src_ver="1">
+		<rule name="PageID" id="1" qi="">
+			<func name="PageID: Other Function 1">
+				<a name="RecognizePageOCR_S" ns="OCR_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="FindFingerprint" ns="autodoc">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="false"/>
+				</a>
+				<a name="rrSet" ns="rrunner">
+					<p name="varSource" v="Fingerprint"/>
+					<p name="varTarget" v="@P.MatchType"/>
+				</a>
+			</func>
+			<func name="Identify SS1A using Text">
+				<a name="WordFind" ns="Locate">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS 1A"/>
+				</a>
+				<a name="SetPageType" ns="DCO" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS1A_P1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="3" modder="admin.1" dt="12/04/13 17:01:51.704 " src_ver="2" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="4" modder="admin.1" dt="12/08/13 22:05:52.28 " src_ver="3" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1">
+			<func name="Barcoded Separators">
+				<a name="GetBarcodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="5" modder="admin.1" dt="12/08/13 23:10:34.682 " src_ver="4" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="6" modder="admin.1" dt="12/09/13 00:29:18.138 " src_ver="5" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1" qi="">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="7" modder="admin.1" dt="12/11/13 20:18:13.324 " src_ver="6" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1" qi="">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="8" modder="admin.1" dt="01/06/14 19:11:24.578 " src_ver="7" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1" qi="">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1" qi="">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="9" modder="admin.1" dt="01/07/14 02:36:21.379 " src_ver="8" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1" qi="">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1" qi="">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="PageID" id="3">
+			<func name="PageID: Other Function 1">
+				<a name="RecognizePageOCR_S" ns="OCR_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="FindFingerprint" ns="autodoc">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="false"/>
+				</a>
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="Fingerprint"/>
+					<p name="varTarget" v="@P.MatchType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="10" modder="admin.1" dt="01/08/14 17:19:24.277 " src_ver="9" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1" qi="">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1" qi="">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="PageID" id="3" ver="11" modder="admin.1" dt="01/23/14 22:10:23.264 " src_ver="10" qi="">
+		<rule name="Set Fingerprint Params" id="2">
+			<func name="PageID: Batch Function 1" qi="">
+				<a name="SetFingerprintDir" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+				</a>
+				<a name="SetFingerprintSearchArea" ns="Autodoc">
+					<p name="matchStart" v="50p"/>
+					<p name="matchEnd" v=""/>
+				</a>
+				<a name="SetProblemValue" ns="autodoc">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0.7" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Level Rule" id="1" qi="">
+			<func name="Barcoded Separators">
+				<a name="PageIDByBCSep" ns="PageID" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(dco_SSNIT)+\+settings.ini,SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

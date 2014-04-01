@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="13" name="FindFingerprint" ver="14" modder="admin.1" qi="" dt="03/21/14 14:11:22.62 " src_ver="13">
+	<rule name="Set Fingerprint Parameters - Batch Level" id="1" qi="">
+		<func name="Default to periods as decimal separator">
+			<a name="SetFingerprintDir" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(fingerprint)" name="StrParam"/>
+			</a>
+			<a name="SetProblemValue" ns="autodoc">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0.8" name="StrParam"/>
+			</a>
+			<a name="SetFingerprintSearchArea" ns="autodoc" qi="">
+				<p name="matchStart" v="1"/>
+				<p name="matchEnd" v=""/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Find Fingerprint Main_Page Rule" id="2" qi="">
+		<func name="Find Fingerprint function" qi="">
+			<a name="SetProblemValue" ns="autodoc" qi="">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="0.60"/>
+			</a>
+			<a name="RecognizePageOCR_S" ns="OCR_s">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="FindFingerprint" ns="autodoc" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Fasle" name="StrParam"/>
+			</a>
+			<a name="rrSet" ns="rrunner" qi="">
+				<p name="varSource" v="Fingerprint"/>
+				<p name="varTarget" v="@P.MatchType"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

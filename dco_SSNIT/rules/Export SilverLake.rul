@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="18" name="Export SilverLake" ver="7" modder="admin.1" dt="03/24/14 16:15:15.190 " src_ver="6" qi="">
+	<rule name="Export SilverLake" id="1">
+		<func name="Function1">
+			<a name="SendDataSilverLake" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions">
+				<p name="strCIFNumber" type="String" v="@P.CIF"/>
+				<p name="strRefNumber" type="String" v="@P.MemberReferenceNumber"/>
+				<p name="strAccNumber" type="String" v="@P.SSNO"/>
+				<p name="strAccType" type="String" v="@P.AccountType"/>
+				<p name="strModule" type="String" v="@P.ModuleType"/>
+				<p name="strHostDocID" type="String" v="@D.TYPE"/>
+				<p name="strScanOfficerID" type="String" v="@OPERATOR"/>
+				<p name="dtScanDateTime" type="String" v="@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)"/>
+				<p name="dtCommitalDateTime" type="String" v="@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)"/>
+				<p name="strDocURL" type="String" v="test"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a name="rr_AbortBatch" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export SilverLake supporting doc" id="2">
+		<func name="Function1">
+			<a name="SendDataSilverLake" ns="com:Datacap.Libraries.CustomActions.Actions=Datacap.Libraries.CustomActions.Actions" qi="">
+				<p name="strCIFNumber" type="String" v="@P.CIF"/>
+				<p name="strRefNumber" type="String" v="@P.MemberReferenceNumber"/>
+				<p name="strAccNumber" type="String" v="@P.SSNO"/>
+				<p name="strAccType" type="String" v="@P.AccountType"/>
+				<p name="strModule" type="String" v="@P.ModuleType"/>
+				<p name="strHostDocID" type="String" v="@TYPE"/>
+				<p name="strScanOfficerID" type="String" v="@OPERATOR"/>
+				<p name="dtScanDateTime" type="String" v="@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)"/>
+				<p name="dtCommitalDateTime" type="String" v="@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)"/>
+				<p name="strDocURL" type="String" v="test"/>
+			</a>
+		</func>
+		<func name="Copy ofFunction2" qi="">
+			<a name="rr_AbortBatch" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

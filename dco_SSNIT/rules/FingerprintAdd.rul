@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="FingerprintAdd" id="8" ver="2" modder="admin.1" dt="11/25/13 18:09:08.771 " src_ver="1" qi="">
+	<rule name="FingerprintAdd" id="1">
+		<func name="FingeprintAdd: Other Function 1">
+			<a name="RecognizePageOCR_S" ns="OCR_s">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,185 @@
+***************** DStudio Application Wizard New Application Logs *************************
+11/25/2013 5:36:34 PM    Creating application folder
+11/25/2013 5:36:34 PM    Creating directory C:\Datacap\SSNIT
+11/25/2013 5:36:34 PM    Created
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\batches, type: Directory
+11/25/2013 5:36:34 PM    Creating directory C:\Datacap\SSNIT\batches
+11/25/2013 5:36:34 PM    Folder created
+11/25/2013 5:36:34 PM    Copying to directory C:\Datacap\SSNIT\batches
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard, type: Directory
+11/25/2013 5:36:34 PM    Creating directory C:\Datacap\SSNIT\dco_AppWizard
+11/25/2013 5:36:34 PM    Folder created
+11/25/2013 5:36:34 PM    Copying to directory C:\Datacap\SSNIT\dco_AppWizard
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules, type: Directory
+11/25/2013 5:36:34 PM    Creating directory C:\Datacap\SSNIT\dco_AppWizard\rules
+11/25/2013 5:36:34 PM    Folder created
+11/25/2013 5:36:34 PM    Copying to directory C:\Datacap\SSNIT\dco_AppWizard\rules
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Assemble.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Assemble.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\Assemble.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Clean.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Clean.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\Clean.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\collection.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\collection.xml to C:\Datacap\SSNIT\dco_AppWizard\rules\collection.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\CreateDocs.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\CreateDocs.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\CreateDocs.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Document Integrity.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Document Integrity.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\Document Integrity.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Export.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Export.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\Export.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\FingerprintAdd.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\FingerprintAdd.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\FingerprintAdd.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\ImageFix.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\ImageFix.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\ImageFix.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\PageID.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\PageID.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\PageID.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Recognize.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Recognize.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\Recognize.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Routing.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Routing.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\Routing.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Validate.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\Validate.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\Validate.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\VScan.rul, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\rules\VScan.rul to C:\Datacap\SSNIT\dco_AppWizard\rules\VScan.rul
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\AppWizard.ini, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\AppWizard.ini to C:\Datacap\SSNIT\dco_AppWizard\AppWizard.ini
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\AppWizard.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\AppWizard.xml to C:\Datacap\SSNIT\dco_AppWizard\AppWizard.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\Export.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\Export.set.xml to C:\Datacap\SSNIT\dco_AppWizard\Export.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\FixUp.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\FixUp.set.xml to C:\Datacap\SSNIT\dco_AppWizard\FixUp.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\fixupBP.ini, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\fixupBP.ini to C:\Datacap\SSNIT\dco_AppWizard\fixupBP.ini
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\ImageFix.ini, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\ImageFix.ini to C:\Datacap\SSNIT\dco_AppWizard\ImageFix.ini
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\iVScan.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\iVScan.set.xml to C:\Datacap\SSNIT\dco_AppWizard\iVScan.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\PageID.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\PageID.set.xml to C:\Datacap\SSNIT\dco_AppWizard\PageID.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\profiler.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\profiler.set.xml to C:\Datacap\SSNIT\dco_AppWizard\profiler.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\Upload.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\Upload.set.xml to C:\Datacap\SSNIT\dco_AppWizard\Upload.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\Verify.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\Verify.set.xml to C:\Datacap\SSNIT\dco_AppWizard\Verify.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\dco_AppWizard\VScan.set.xml, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\dco_AppWizard\VScan.set.xml to C:\Datacap\SSNIT\dco_AppWizard\VScan.set.xml
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\export, type: Directory
+11/25/2013 5:36:34 PM    Creating directory C:\Datacap\SSNIT\export
+11/25/2013 5:36:34 PM    Folder created
+11/25/2013 5:36:34 PM    Copying to directory C:\Datacap\SSNIT\export
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\fingerprint, type: Directory
+11/25/2013 5:36:34 PM    Creating directory C:\Datacap\SSNIT\fingerprint
+11/25/2013 5:36:34 PM    Folder created
+11/25/2013 5:36:34 PM    Copying to directory C:\Datacap\SSNIT\fingerprint
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\fingerprint\555.cco, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\fingerprint\555.cco to C:\Datacap\SSNIT\fingerprint\555.cco
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\fingerprint\555.tif, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\fingerprint\555.tif to C:\Datacap\SSNIT\fingerprint\555.tif
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\images, type: Directory
+11/25/2013 5:36:34 PM    Creating directory C:\Datacap\SSNIT\images
+11/25/2013 5:36:34 PM    Folder created
+11/25/2013 5:36:34 PM    Copying to directory C:\Datacap\SSNIT\images
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\AppWizard.app, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\AppWizard.app to C:\Datacap\SSNIT\AppWizard.app
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\AppWizard.app.bak, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\AppWizard.app.bak to C:\Datacap\SSNIT\AppWizard.app.bak
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\AppWizardAdm.mdb, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\AppWizardAdm.mdb to C:\Datacap\SSNIT\AppWizardAdm.mdb
+11/25/2013 5:36:34 PM    File Copied.
+11/25/2013 5:36:34 PM    Processing item C:\Datacap\DStudio\AppWizard\AppWizardEng.mdb, type: Archive
+11/25/2013 5:36:34 PM    Copying file C:\Datacap\DStudio\AppWizard\AppWizardEng.mdb to C:\Datacap\SSNIT\AppWizardEng.mdb
+11/25/2013 5:36:35 PM    File Copied.
+11/25/2013 5:36:35 PM    Processing item C:\Datacap\DStudio\AppWizard\AppWizardFingerprint.mdb, type: Archive
+11/25/2013 5:36:35 PM    Copying file C:\Datacap\DStudio\AppWizard\AppWizardFingerprint.mdb to C:\Datacap\SSNIT\AppWizardFingerprint.mdb
+11/25/2013 5:36:35 PM    File Copied.
+11/25/2013 5:36:35 PM    Processing item C:\Datacap\DStudio\AppWizard\AppWizardLook.mdb, type: Archive
+11/25/2013 5:36:35 PM    Copying file C:\Datacap\DStudio\AppWizard\AppWizardLook.mdb to C:\Datacap\SSNIT\AppWizardLook.mdb
+11/25/2013 5:36:35 PM    File Copied.
+11/25/2013 5:36:35 PM    Processing item C:\Datacap\DStudio\AppWizard\dco.xsl, type: Archive
+11/25/2013 5:36:35 PM    Copying file C:\Datacap\DStudio\AppWizard\dco.xsl to C:\Datacap\SSNIT\dco.xsl
+11/25/2013 5:36:35 PM    File Copied.
+11/25/2013 5:36:35 PM    Copying sample files
+11/25/2013 5:36:35 PM    Updating database names
+11/25/2013 5:36:35 PM    Updating DCO
+11/25/2013 5:36:35 PM    Updating admin database
+11/25/2013 5:36:35 PM    ***** Admin Database *****
+Update: All records deleted from AUDIT table
+
+11/25/2013 5:36:35 PM    ***** Admin Database *****
+Update: ADMINFO.db_apptitle updated to SSNIT
+
+11/25/2013 5:36:35 PM    ***** Admin Database *****
+Update: ADMINFO.db_index updated to 635
+
+11/25/2013 5:36:35 PM    ***** Admin Database *****
+Update: DCO.dco_id updated to SSNIT
+
+11/25/2013 5:36:35 PM    Updating engine database
+11/25/2013 5:36:35 PM    ***** Engine Database *****
+Update: ENGINFO.db_index updated to 635
+
+11/25/2013 5:36:35 PM    Updating fingerprint database
+11/25/2013 5:36:35 PM    Saving fingerprint data
+11/25/2013 5:36:35 PM    Updating libs files
+11/25/2013 5:36:35 PM    Deleting AppWizard.xml
+11/25/2013 5:36:35 PM    Updating project files
+11/25/2013 5:36:35 PM    Creating DCApp
+11/25/2013 5:36:35 PM    Updating DCApp file
+11/25/2013 5:36:35 PM    Updating APP file
+11/25/2013 5:36:35 PM    ***** APP File *****
+Before: PROVIDER=MSACCESS;DSN=[path/]AppWizardEng.mdb;CATALOG=;DBNTA=;
+After: PROVIDER=MSACCESS;DSN=[path/]SSNITEng.mdb;CATALOG=;DBNTA=;
+
+11/25/2013 5:36:35 PM    ***** APP File *****
+Before: PROVIDER=MSACCESS;DSN=[path/]AppWizardAdm.mdb;CATALOG=;DBNTA=;
+After: PROVIDER=MSACCESS;DSN=[path/]SSNITAdm.mdb;CATALOG=;DBNTA=;
+
+11/25/2013 5:36:35 PM    ***** APP File *****
+Before: AppWizard.xml
+After: SSNIT.xml
+
+11/25/2013 5:36:35 PM    ***** APP File *****
+Before: Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\AppWizard\AppWizardFingerprint.mdb;
+After: Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\SSNIT\SSNITFingerprint.mdb;
+
+11/25/2013 5:36:35 PM    ***** APP File *****
+Before: provider=microsoft.jet.oledb.4.0;data source=c:\datacap\AppWizard\AppWizardLook.mdb;persist security info=false;
+After: provider=microsoft.jet.oledb.4.0;data source=C:\Datacap\SSNIT\SSNITLook.mdb;persist security info=false;
+
+11/25/2013 5:36:35 PM    ***** APP File *****
+Before: c:\datacap\AppWizard\images
+After: C:\Datacap\SSNIT\images
+
+11/25/2013 5:36:35 PM    Cleaning up fingeprint path C:\Datacap\DStudio\AppWizard\fingerprint\
+11/25/2013 5:36:35 PM    Cleaning up fingeprint path C:\Datacap\SSNIT\fingerprint\
+11/25/2013 5:36:35 PM    Cleaning up file C:\Datacap\SSNIT\AppWizard.app.bak

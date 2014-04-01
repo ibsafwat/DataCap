@@ -1,0 +1,4384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset name="Recognize" id="4" ver="1">
+		<rule name="Recognize Page" id="1">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="2" modder="admin.1" dt="11/25/13 18:21:27.177 " src_ver="1" qi="">
+		<rule name="Recognize Page" id="1">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@F.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="tic"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="3" modder="admin.1" dt="12/04/13 17:02:08.563 " src_ver="2" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Recognition: Page Function 2">
+				<a name="RecognizePageOCR_S" ns="OCR_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="FindFingerprint" ns="autodoc">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="fasle"/>
+				</a>
+				<a name="rrSet" ns="rrunner">
+					<p name="varSource" v="Fingerprint"/>
+					<p name="varTarget" v="@P.MatchType"/>
+				</a>
+			</func>
+			<func name="Identify SS1A using Text">
+				<a name="WordFind" ns="Locate">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS 1A"/>
+				</a>
+				<a name="SetPageType" ns="DCO">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS1A_P1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="4" modder="admin.1" dt="12/04/13 17:44:32.704 " src_ver="3" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="5" modder="admin.1" dt="12/05/13 00:04:16.791 " src_ver="4" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="6" modder="admin.1" dt="12/09/13 22:05:36.985 " src_ver="5" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Identify SS1A using Text">
+				<a name="WordFind" ns="Locate">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS 1A"/>
+				</a>
+				<a name="SetPageType" ns="DCO" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="SS1A_P1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="7" modder="admin.1" dt="01/06/14 19:48:44.125 " src_ver="6" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Identify SS1A using Text">
+				<a name="WordFind" ns="Locate">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SS 1A" name="StrParam"/>
+				</a>
+				<a name="SetPageType" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="0"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="8" modder="admin.1" dt="01/06/14 19:59:42.110 " src_ver="7" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Identify SS1A using Text">
+				<a name="WordFind" ns="Locate">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SS 1A" name="StrParam"/>
+				</a>
+				<a name="SetPageType" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="SS1A_P1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="0"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="9" modder="admin.1" dt="01/08/14 23:50:47.438 " src_ver="8" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="10" modder="admin.1" dt="01/12/14 20:39:39.469 " src_ver="9" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="11" modder="admin.1" dt="01/14/14 17:23:55.218 " src_ver="10" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi=""/>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="12" modder="admin.1" dt="01/14/14 17:32:38.265 " src_ver="11" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="C2BW_Convert" ns="ColorToBW">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="tic" name="sParam"/>
+				</a>
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="13" modder="admin.1" dt="01/14/14 21:16:06.325 " src_ver="12" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1">
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="14" modder="admin.1" dt="01/23/14 20:46:52.555 " src_ver="13" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi=""/>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="15" modder="admin.1" dt="01/23/14 21:31:10.442 " src_ver="14" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi=""/>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="16" modder="admin.1" dt="01/23/14 21:54:07.436 " src_ver="15" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Barcode" id="4">
+			<func name="Barcode">
+				<a name="Get2DCodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="17" modder="admin.1" dt="02/02/14 06:43:55.175 " src_ver="16" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v=","/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="18" modder="admin.1" dt="02/02/14 08:53:31.870 " src_ver="17" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B.Separator.Document_Separator.GetBarCodeList"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="19" modder="admin.1" dt="02/02/14 09:18:24.898 " src_ver="18" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@D.GetBarCodeList"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="20" modder="admin.1" dt="02/02/14 16:51:38.210 " src_ver="19" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@F.GetBarCodeList"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="21" modder="admin.1" dt="02/02/14 17:27:10.304 " src_ver="20" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="\Separator\Document_Separator\GetBarCodeList"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="22" modder="admin.1" dt="02/02/14 18:52:48.648 " src_ver="21" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="\Separator\Document_Separator\GetBarCode1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="23" modder="admin.1" dt="02/02/14 19:05:42.257 " src_ver="22" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="\Separator\Document_Separator\GetBarCode1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="24" modder="admin.1" dt="02/02/14 19:09:11.210 " src_ver="23" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@D.Separator.Document_Separator.GetBarCode1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="25" modder="admin.1" dt="02/02/14 19:13:49.867 " src_ver="24" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@F.GetBarCode1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="26" modder="admin.1" dt="02/02/14 19:22:42.179 " src_ver="25" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B.GetBarCode1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="27" modder="admin.1" dt="02/02/14 19:28:00.101 " src_ver="26" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B.GetBarCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="28" modder="admin.1" dt="02/02/14 19:38:58.460 " src_ver="27" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@F.GetBarCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="29" modder="admin.1" dt="02/02/14 19:41:54.851 " src_ver="28" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@P\GetBarCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="30" modder="admin.1" dt="02/02/14 19:46:34.695 " src_ver="29" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B\GetBarCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="31" modder="admin.1" dt="02/02/14 19:52:48.554 " src_ver="30" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B\Document_Separator\GetBarCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="32" modder="admin.1" dt="02/02/14 20:06:05.304 " src_ver="31" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@B\Document_Separator\GetBarCode" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@P\GetBarCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="33" modder="admin.1" dt="02/02/14 20:11:46.351 " src_ver="32" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@B\Document_Separator\GetBarCode" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="value"/>
+					<p name="varTarget" v="@P\GetBarCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="34" modder="admin.1" dt="02/02/14 20:18:17.945 " src_ver="33" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@B\Document_Separator\GetBarCode" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P\GetBarCode"/>
+					<p name="varTarget" v=""/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="35" modder="admin.1" dt="02/02/14 20:29:29.382 " src_ver="34" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@B\Document_Separator\GetBarCode" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@P.GetBarCodeValue"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="36" modder="admin.1" dt="02/02/14 20:32:07.382 " src_ver="35" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="GetBarcodeBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@P.GetBarCodeValue"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="37" modder="admin.1" dt="02/02/14 20:38:12.960 " src_ver="36" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v=","/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@P.GetBarCodeValue"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="38" modder="admin.1" dt="02/02/14 20:42:10.867 " src_ver="37" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCodeList"/>
+					<p name="varTarget" v="@P.Test"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="39" modder="admin.1" dt="02/02/14 20:44:26.726 " src_ver="38" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@P.GetBarCodeList"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="40" modder="admin.1" dt="02/02/14 20:48:31.148 " src_ver="39" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B\Separator\GetBarCodeList"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="41" modder="admin.1" dt="02/02/14 21:01:04.312 " src_ver="40" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@F.Field19"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@B\Separator\GetBarCodeList" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="42" modder="admin.1" dt="02/02/14 21:12:59.656 " src_ver="41" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@F.Field19"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rr_Get" ns="rrunner" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B\Separator\Document_Separator\GetBarCodeList"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="43" modder="admin.1" dt="02/02/14 23:00:54.156 " src_ver="42" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@F.Field19"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@B\Separator\Document_Separator\GetBarCodeList"/>
+					<p name="varTarget" v="@P\Field17"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="44" modder="admin.1" dt="02/02/14 23:05:42.859 " src_ver="43" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@F.Field19"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@F\Separator\Document_Separator\GetBarCodeList"/>
+					<p name="varTarget" v="@P\Field17"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="45" modder="admin.1" dt="02/02/14 23:05:57.437 " src_ver="44" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@F.Field19"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P\Separator\Document_Separator\GetBarCodeList"/>
+					<p name="varTarget" v="@P\Field17"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="46" modder="admin.1" dt="02/02/14 23:09:20.937 " src_ver="45" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get" id="7">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P.GetBarCode"/>
+					<p name="varTarget" v="@F.Field19"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get Barcode" id="8" qi="">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="@P\Separator\Document_Separator\GetBarCodeList"/>
+					<p name="varTarget" v="@P\Field17"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="47" modder="admin.1" dt="02/07/14 20:41:37.401 " src_ver="46" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@F.TYPE" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="48" modder="admin.1" dt="02/07/14 20:42:38.495 " src_ver="47" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="14"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="49" modder="admin.1" dt="02/10/14 02:22:26.746 " src_ver="48" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="10"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="50" modder="admin.1" dt="02/10/14 02:27:45.136 " src_ver="49" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="20"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="51" modder="admin.1" dt="02/10/14 02:34:49.792 " src_ver="50" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="20"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="52" modder="admin.1" dt="02/10/14 02:35:15.808 " src_ver="51" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="5"/>
+					<p name="background" v="5"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="53" modder="admin.1" dt="02/10/14 03:24:06.871 " src_ver="52" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="6"/>
+					<p name="background" v="5"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="54" modder="admin.1" dt="03/02/14 17:35:40.826 " src_ver="53" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="6"/>
+					<p name="background" v="5"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Barcode" id="8">
+			<func name="Function1">
+				<a name="GetBarcodeBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="55" modder="admin.1" dt="03/02/14 23:36:29.413 " src_ver="54" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="6"/>
+					<p name="background" v="5"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="56" modder="admin.1" dt="03/03/14 01:32:59.152 " src_ver="55" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="6"/>
+					<p name="background" v="5"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Barcode 1" id="8">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner">
+					<p name="varSource" v="561,200,4709,602"/>
+					<p name="varTarget" v="@F.Position"/>
+				</a>
+				<a name="ReadZones" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="GetBarcodeBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Barcode 2" id="9">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="581,722,4749,1143"/>
+					<p name="varTarget" v="@F.Position"/>
+				</a>
+				<a name="ReadZones" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="GetBarcodeBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="57" modder="admin.1" dt="03/03/14 01:50:17.186 " src_ver="56" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="6"/>
+					<p name="background" v="5"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Barcode 1" id="8" qi="">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner">
+					<p name="varSource" v="561,200,4709,602"/>
+					<p name="varTarget" v="@F.Position"/>
+				</a>
+				<a name="ReadZones" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizeFieldOCR_S" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="GetBarcodeBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Barcode 2" id="9">
+			<func name="Function1">
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v="581,722,4749,1143"/>
+					<p name="varTarget" v="@F.Position"/>
+				</a>
+				<a name="ReadZones" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizeFieldOCR_S" ns="OCR_s" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="GetBarcodeBP" ns="Barcode_P">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="58" modder="admin.1" dt="03/03/14 02:48:07.676 " src_ver="57" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="6"/>
+					<p name="background" v="5"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="59" modder="admin.1" dt="03/09/14 18:26:09.933 " src_ver="58" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="10"/>
+					<p name="background" v="9"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="60" modder="admin.1" dt="03/09/14 18:30:35.890 " src_ver="59" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="12"/>
+					<p name="background" v="10"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="61" modder="admin.1" dt="03/09/14 18:36:40.343 " src_ver="60" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="15"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="62" modder="admin.1" dt="03/09/14 18:51:39.650 " src_ver="61" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="17"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="63" modder="admin.1" dt="03/09/14 19:01:52.328 " src_ver="62" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="18"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="64" modder="admin.1" dt="03/09/14 19:26:18.848 " src_ver="63" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="19"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="65" modder="admin.1" dt="03/24/14 13:49:04.69 " src_ver="64" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="IsFieldLengthMax" ns="Validations">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="64" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="19"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="66" modder="admin.1" dt="03/24/14 17:34:12.446 " src_ver="65" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="19"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="Recognize" id="4" ver="67" modder="admin.1" dt="03/26/14 19:48:32.770 " src_ver="66" qi="">
+		<rule name="Recognize Page" id="1" qi="">
+			<func name="Recognition: Page Function 1" qi="">
+				<a name="ReadZones" ns="Zones">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="RecognizePageFieldsOCR_S" ns="ocr_s">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Right" id="2">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Save Snippet Left" id="7" qi="">
+			<func name="Function1">
+				<a name="ZoneImage_SaveAs" ns="Zones" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@ID+@BATCHID" name="StrFileName"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone ICR " id="3" qi="">
+			<func name="Function1" qi="">
+				<a name="RecognizeFieldICR_C" ns="icr_c" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Get All Barcodes" id="4" qi="">
+			<func name="Barcode">
+				<a name="GetAllBarcodesBP" ns="Barcode_P" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="," name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Skip" id="5">
+			<func name="Skip">
+				<a name="SetPageStatus" ns="DCO" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Recognize Zone OMR" id="6" qi="">
+			<func name="Function1" qi="">
+				<a name="RecogOMRThreshold" ns="Recog_Shared" qi="">
+					<p name="threshold" v="20"/>
+					<p name="background" v="19"/>
+				</a>
+				<a name="rrCompare" ns="rrunner">
+					<p name="object1" v="@VALUE"/>
+					<p name="object2" v="0000"/>
+				</a>
+				<a name="rrSet" ns="rrunner" qi="">
+					<p name="varSource" v=""/>
+					<p name="varTarget" v="@VALUE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

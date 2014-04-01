@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="Clean" id="9" ver="3" modder="admin.1" dt="11/26/13 18:32:47.315 " src_ver="2" qi="">
+	<rule name="Fields Clean" id="1">
+		<func name="Remove MISC Chars">
+			<a name="DeleteAllMiscChars" ns="Validations" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

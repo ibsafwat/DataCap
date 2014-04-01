@@ -1,0 +1,22 @@
+<ruleset name="Document Integrity" id="11" ver="1">
+	<rule name="Batch Document Integrity Check" id="1">
+		<func name="Check batch integrity">
+			<a name="CheckAllIntegrity" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="Batch Route To Fixup">
+			<a name="Task_NumberOfSplits" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a name="Task_RaiseCondition" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

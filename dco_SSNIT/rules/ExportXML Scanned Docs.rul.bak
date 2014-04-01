@@ -1,0 +1,5310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="1" modder="admin.1" qi="">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocs"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Supporting Docs" id="2">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="4" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,@D.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="2" modder="admin.1" qi="" dt="02/12/14 17:23:04.69 " src_ver="1">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@BATCHID"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Supporting Docs" id="2">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="4" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@D.TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Cover Page" id="5" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,CoverPage"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="3" modder="admin.1" qi="" dt="02/12/14 17:26:59.600 " src_ver="2">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@BATCHID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,CoverPage" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Supporting Docs" id="2">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="4" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@D.TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="4" modder="admin.1" qi="" dt="02/12/14 17:32:35.350 " src_ver="3">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@BATCHID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Supporting Docs" id="2">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="4" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@D.TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,CoverPage" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="5" modder="admin.1" qi="" dt="02/12/14 18:12:10.741 " src_ver="4">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Supporting Docs" id="2">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="4" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@D.TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,CoverPage" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="6" modder="admin.1" qi="" dt="02/12/14 19:19:30.522 " src_ver="5">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Supproting Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ApplicationReferenceNumber,ScannedDocs"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ApplicationReferenceNumber,@P.GetBarCode1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="4">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,@D.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="7" modder="admin.1" qi="" dt="02/12/14 19:39:36.38 " src_ver="6">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ApplicationReferenceNumber,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ApplicationReferenceNumber,@P.GetBarCode1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="8" modder="admin.1" qi="" dt="02/13/14 02:11:57.459 " src_ver="7">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR "/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="9" modder="admin.1" qi="" dt="02/13/14 02:12:41.866 " src_ver="8">
+		<rule name="Open XML" id="1">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="10" modder="admin.1" qi="" dt="02/13/14 21:51:50.838 " src_ver="9">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="11" modder="admin.1" qi="" dt="02/16/14 19:33:09.157 " src_ver="10">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="12" modder="admin.1" qi="" dt="02/16/14 23:36:03.530 " src_ver="11">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="13" modder="admin.1" qi="" dt="02/17/14 00:04:01.795 " src_ver="12">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="14" modder="admin.1" qi="" dt="03/06/14 23:35:30.454 " src_ver="13">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@D.id"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="15" modder="admin.1" qi="" dt="03/06/14 23:41:47.768 " src_ver="14">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="16" modder="admin.1" qi="" dt="03/07/14 00:00:18.768 " src_ver="15">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@D.id"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="17" modder="admin.1" qi="" dt="03/07/14 00:04:04.346 " src_ver="16">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="18" modder="admin.1" qi="" dt="03/07/14 00:14:23.78 " src_ver="17">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@Document_Separator.id"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="19" modder="admin.1" qi="" dt="03/07/14 00:17:01.91 " src_ver="18">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+\Document_Separator.id"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="20" modder="admin.1" qi="" dt="03/07/14 00:20:08.44 " src_ver="19">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="21" modder="admin.1" qi="" dt="03/08/14 22:44:59.345 " src_ver="20">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,PSPORT" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned IDNDOC002" id="21" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC002"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned IDNDOC001" id="22" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC001"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="22" modder="admin.1" qi="" dt="03/08/14 22:48:57.448 " src_ver="21">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC001"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned IDNDOC002" id="21" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC002" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="23" modder="admin.1" qi="" dt="03/09/14 19:13:08.372 " src_ver="22">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC001" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned IDNDOC002" id="21" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC002" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="24" modder="admin.1" qi="" dt="03/09/14 19:18:34.165 " src_ver="23">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID" name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC001" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned IDNDOC002" id="21" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC002" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="17" name="ExportXML Scanned Docs" ver="25" modder="admin.1" qi="" dt="03/09/14 19:25:19.193 " src_ver="24">
+		<rule name="Open XML" id="1" qi="">
+			<func name="Function1">
+				<a name="xml_SetExportPath" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+				</a>
+				<a name="xml_SetFileName" ns="ExportXML" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ScannedDocXML_+@ID.id"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+			<func name="Function2"/>
+		</rule>
+		<rule name="Scanned Docs" id="2" qi="">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,@TYPE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned CoverPage" id="5">
+			<func name="Function1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="OPERATOR ,@OPERATOR " name="StrParam"/>
+				</a>
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime ,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="DateTime,@DATE(dd/MM/yyyy)+@STRING( )+@TIME(HH:MM)" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1" id="4">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM1*Page2" id="6">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2" id="17" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM2*Page2" id="18" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM2*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3" id="7">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM3*Page2" id="8">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM3*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4" id="9">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM4*Page2" id="10">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM4*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSM5" id="11">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSM5" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1" id="12" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSP1*Page2" id="13">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSP1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1" id="19" qi="">
+			<func name="Copy ofCopy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned SSE1*Page2" id="20" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,SSE1*Page2" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned DRVLC " id="14" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,DRVLC" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned BCERTM" id="15" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,BCERTM" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned PSPORT" id="16" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC001" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Scanned IDNDOC002" id="21" qi="">
+			<func name="Copy ofFunction1">
+				<a name="xml_NewNode" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,ScannedDocs" name="Strparam"/>
+				</a>
+				<a name="xml_SetNodeValue" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Scanned,IDNDOC002" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Close XML" id="3" qi="">
+			<func name="Function1">
+				<a name="xml_SaveFile" ns="ExportXML">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>
